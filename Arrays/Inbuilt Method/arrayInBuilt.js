@@ -41,17 +41,17 @@
 // var a =[1,2,3,2,8,[4,8,[5,3,8, [1,2,3,4, [ 4,5,6,7,8 ]]]]];
 // var a = [10,20,30,40,30,50];
 
-// let b = a.indexOf(30,3);
+// let b = a.indexOf(30,5);
 //      ( element,index starts search from left to right )
 // console.log(b); //if value is not  present it return -1
 // //lastIndexOf- is used to check the index value is present or not ^ it occurs last repeated values
-// console.log( a.lastIndexOf(30,1) );
+// console.log( a.lastIndexOf(30,5) );
 /////      ( element,index starts search from right to left )
 
 //flat method
 // var a =[1,2,3,2,8,[4,[2,3],[ 3,4,5,6,[7,8,10,[123,12,1213]] ]]];
 
-// var a = [1,2,3,[4,5,12,34,56,6]]
+// var a = [1,2,3,[4,5,[12,34],56,6], [4,5,6,7,8]]
 // //  var b = a.flat( Infinity );
 // console.log( a.flat(Infinity) );
 
@@ -62,11 +62,11 @@
 
 // // sort method
 
-var a2 = [1,3,5,2,4,6,10,45,567,1010,34,76,89, 88,87]
+// var a2 = [1,3,5,2,4,6,9,";",0,11,21,13,25,235, 236,85,87,8,95,91," ", "!", "|"]
 
-a2.sort();
+// a2.sort();  //ASCCI value- unicode
 
-console.log( a2 );
+// console.log( a2 );
 
 // var a2 = ["-",";","cat","Apple","Bat","Desk","Donkey"]
 // a2.sort();
@@ -295,15 +295,15 @@ console.log( a2 );
 
 //Reduce method
 
-let val = [ 100,20,300,301,302,20 ]
+// let val = [ 100,20,300,301,302,20 ]
             // 100+20 = 120
             //  120+300 = 420
             // 420+301 = 721
             // 721+302 = 1023
             //1023+20 = 1043
-let sum = val.reduce(function(first,second){
-    return(first+second); 
-})
+// let sum = val.reduce(function(first,second){
+//     return(first+second); 
+// })
 // console.log( sum );
 
 

@@ -34,9 +34,9 @@
 // }
 // x(10,6);
 
-let abc = (a,b) => console.log(a+b);
+let abc = (a, b) => console.log(a + b);
 
-abc(1,2)
+abc(1, 2)
 // let y = (b,c) =>
 // {
 //     console.log(b-c);
@@ -226,9 +226,9 @@ or default parameter values for function behavior based on different argument pa
 // }
 // ab();
 // function ab() {
-    
+
 //     for ( let index = 0; index < 4; index++) {
-        
+
 //         console.log( index );
 //     }
 // }
@@ -243,9 +243,9 @@ or default parameter values for function behavior based on different argument pa
 
 // let ab = function() {
 //     var b = 5
-      
+
 //     // if (true) { 
-        
+
 //     //     if (true) {
 //     //         console.log( a );
 //     //     }
@@ -400,7 +400,7 @@ or default parameter values for function behavior based on different argument pa
 // let b = 20;
 // var c = 30;
 // function functionName() {
-   
+
 //     function innerFunction() {
 //         for (let index = 0; index < 5; index++) {
 
@@ -499,15 +499,27 @@ or default parameter values for function behavior based on different argument pa
 //The Function which accepts another function as an argument - Higher Order function
 //The Function which is sent as an argument for another function  - Call Back
 
-function higherOrderFunction(){
+// function higherOrderFunction(acceptCallBack) {
+//     console.log(acceptCallBack);
+//     console.log("Im Higher Order");
+// }
+// let callBackFunction = function () {
+//     console.log("Im call back");
+// }
 
-    console.log( "Im Higher Order" );
-}
-let callBackFunction = function (){
-    console.log( "Im call back" );
+// higherOrderFunction(callBackFunction())
+
+function myDisplayer(something) {
+    console.log(something)
 }
 
-higherOrderFunction( callBackFunction( )  )
+function myCalculator(num1, num2, myCallback) {
+    let sum = num1 + num2;
+    myCallback(sum);
+    console.log("something fishy")
+}
+
+myCalculator(5, 5, myDisplayer);
 
 
 // var firstName = 10;
@@ -522,7 +534,7 @@ higherOrderFunction( callBackFunction( )  )
 // let arr = [1,2,3,4,5]
 // function functionName( ...b){
 
-// console.log( a,b );    
+// console.log( a,b );
 
 // }
 // functionName(1,2,3,4,arr)
