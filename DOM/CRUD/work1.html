@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONVERSION method</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .counter{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            
+            width: 200px;
+            height: 250px;
+            transform: translate(-50%,-50%);
+        }
+        input{
+            width: 200px;
+            height: 210px;
+            font-size: 50px;
+        }
+        .plus{
+            height: 35px;
+            width: 90px;
+        }
+        .minus{
+            height: 35px;
+            width: 90px;
+        }
+        .btnInOut{
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <hr>
+    <div class="counter">
+            <input type="text">
+            <br>
+            <!-- //<button class="plus" onclick="increase()">+</button>
+            <button class="minus" onclick="decrease()">-</button> -->
+            <div class="btnInOut">
+                <button class="plus" onclick="calculate(1)">+</button>
+                <button class="minus" onclick="calculate(-1)">-</button>
+            </div>
+    </div>
+    <script>
+        function calculate(operator) 
+        {
+            var input = document.querySelector("input");
+            var val = Number(input.value);  
+            input.value = val+operator;
+
+            if (input.value>0 && input.value<=30) 
+            {
+              input.style.backgroundColor = "red" ;
+              input.style.color = "blue"   
+            } 
+            else if(input.value>30 && input.value<=50)
+            {
+               input.style.backgroundColor = "purple"
+               input.style.color = "white"    
+            }
+            else if(input.value>50 && input.value<=55)
+            {
+                input.style.backgroundColor = "green" ;
+                input.style.color = "black" 
+            }
+            else
+            {
+                input.style.backgroundColor = "yellow" ;
+                input.style.color = "red" 
+            }
+        }
+
+        // function increase() 
+        // {
+        //     var input = document.querySelector("input");
+        //     var val = Number(input.value);  
+        //     //CONVERSION ---->PROGRAMMER  
+        //     //COHERSION  ---->ENGINE
+        //     input.value = val+1
+        // }
+        // function decrease() 
+        // {
+        //     var input = document.querySelector("input");
+        //     var val = Number(input.value);  
+        //     //CONVERSION ---->PROGRAMMER  
+        //     //COHERSION  ---->ENGINE
+        //     input.value = val-1;
+        // }
+    </script>
+</body>
+</html>

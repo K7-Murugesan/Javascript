@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main" >
+                <label >Name:</label>   <input type="text" placeholder="Your name" id="name">
+                <label >Address:</label>   <input type="text" placeholder="Current Address" id="location">
+                <label >Hobby:</label>   
+                    <select name="Hobby" id="Hobby">
+                        <option value="Games">Games</option>
+                        <option value="Cricket">Cricket</option>
+                        <option value="Chess">Chess</option>
+                    </select>
+                <button onclick="profile()">Submit the Details</button>
+        </div>
+    </div>
+
+    <script>
+        function profile() 
+        {
+            let name = document.getElementById("name").value ;
+            let location = document.getElementById("location").value ;
+            let hobby = document.getElementById("Hobby").value ;
+
+            console.log(`Hi, My Name is ${name}, current address is ${location} and hobby is ${hobby}.`);
+
+        }
+    </script>
+</body>
+</html>

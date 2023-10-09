@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 align=""center> MAnuplation of Attributes</h1>
+    <hr>
+    <marquee direction="left" scrollamount="10"> Breaking News........</marquee>
+
+    <button onclick="changeDirection()">Change Direction</button>
+    <br>
+    <button onclick=changeSpeed(15)>Increase</button>
+    <button onclick=changeSpeed(-5)>Decrease</button>
+
+    <script>
+        function changeDirection() 
+        {
+            var marquee = document.querySelector("marquee");
+            if (marquee.direction=="left")  //read 
+            {
+                //marquee.setAttribute("direction", "right");
+                marquee.direction= "right";  //update
+                marquee.bgColor= "red" ;     //create
+
+                //Using (.attribute) we can create, read, update and delete---
+            } 
+            else 
+            {
+                //marquee.setAttribute("direction", "left");
+                marquee.direction= "left";  //delete
+            }
+        }
+        function changeSpeed(speed) 
+        {
+            var marquee = document.querySelector("marquee");
+            marquee.scrollAmount = marquee.scrollAmount + speed ;
+            marquee.bgColor = Math.random();
+        }
+    </script>
+</body>
+</html>

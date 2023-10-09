@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    outline: none;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main{
+    background-color: #ecf0f3;
+    padding: 10px ;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                        5px 5px 12px rgba(236, 195, 13, 0.877) ;
+    display: grid;
+    grid-template-columns: repeat(1);
+    /* padding: 100px; */
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+button{
+    grid-column: span 1 ;
+    height: 40px;
+    width: 70%;
+    background-color: #dfe7ec;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                 5px 5px 12px rgba(0, 0, 0, 0.781) ;
+    border: none;
+    margin: auto;
+    border-radius: 30px;
+    /* margin-top: 100px; */
+}
+input{
+    width: 270px;
+    height: 30px;
+    border: none;
+    background-color: #dfe7ec;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                 inset 5px 5px 12px rgba(0, 0, 0, 0.541) ;
+    border-radius: 30px;
+    padding-left: 10px;
+    margin: auto;
+    /* margin-top: -1px; */
+}
+input::placeholder{
+    color: black;
+}
+select{
+    height: 30px;
+    width: 50%;
+    margin: auto;
+    /* margin-top: -1px; */
+}
+label{
+    margin-bottom: -50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    font-size: 20px ;
+    color: rgb(235, 90, 22);
+    text-shadow: 1px -1px 0 #ebb504, -1px 2px 1px #e99a09, -2px 4px 1px #f5b60b, -3px 6px 1px #eb8a0c ;
+}

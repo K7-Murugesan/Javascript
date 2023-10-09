@@ -1,0 +1,29 @@
+//Swapping the program by third variable
+
+var a = 10;
+var b = 20;
+var temp=b;
+b=a;
+a=temp;
+
+console.log(b);
+console.log(a);
+
+//Swapping two variables without using third variables
+
+var a = 10;
+var b = 20;
+a=a+b;
+b=a-b;
+a=a-b;
+console.log(b);
+console.log(a);
+
+//Swapping two variables without using third variables with one statements
+
+var a = 10;
+var b = 20;
+temp=b, b=a, a=temp ;
+console.log(b);
+console.log(a);
+

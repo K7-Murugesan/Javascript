@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="container">
+        <div class="heading">ROLL THE DICE</div>
+        <div class="dice">
+            <img src="images/coverImg.png" id="coverImage">
+        </div>
+        <div class="button">
+            <button data-number onclick="letsRoll()" id="button" >Roll &#127922 &#128269;</button>
+        </div>
+    </div>
+
+    <script>
+        function letsRoll() 
+        {
+            let dice = parseInt(Math.random()*6)+1 ; 
+            let imageTag = document.getElementById("coverImage");
+            imageTag.src =  "images/"+ dice + ".png" ;    
+        }
+    </script>
+</body>
+</html>

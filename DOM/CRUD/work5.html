@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Visibility</title>
+</head>
+<body>
+    <h1>Password Visibility</h1>
+    <hr>
+    <input type="password">
+    <button onmousedown="visible()" onmouseup="invisible()">eye</button>
+    <button onclick="sample()">Computed Style</button>
+    <script>
+
+        // function visible() 
+        // {
+        //   var input = document.querySelector("input");
+        //   if (input.type=="password") 
+        //   {
+        //     input.type="text" ;
+        //   } 
+        //   else 
+        //   {
+        //     input.type="password" ;
+        //   }  
+        // }
+        function visible() 
+        {
+          var input = document.querySelector("input");
+          if (input.type=="password") 
+          {
+            input.type="text" ;
+          } 
+        }
+        function invisible() 
+        {
+          var input = document.querySelector("input");
+          if (input.type=="text") 
+          {
+            input.type="password" ;
+
+          } 
+        }
+        function sample() 
+        {
+          var h1 = document.querySelector("h1");
+          var ds = getComputedStyle(h1);
+          console.log(ds);
+        }
+        
+    </script>
+</body>
+</html>
