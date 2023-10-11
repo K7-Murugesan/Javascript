@@ -1,8 +1,9 @@
-// var a = 8;
-// // var b = Boolean("asdad")
+var a = 8;
+var b = Boolean(0)
+console.log( b );
 // var b = '8'
 
-// console.log( a-null )
+console.log( a-true )
 
 // console.log( a**3  );
 

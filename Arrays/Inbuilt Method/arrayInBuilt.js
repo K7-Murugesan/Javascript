@@ -13,7 +13,6 @@
 //   console.log( c );
 
 
-
 //push method
 // var b=[1,2,3,4,5];
 // b.push(6,7,'eight',[9,10,11]);
@@ -35,9 +34,9 @@
 
 //includes method
 //  var a1 =[1,2,3,4,5];
-//  console.log(a1.includes(1));  
+//  console.log(a1.includes(7));  
 
-//indexOf method - is used to check the index value is present or not  and it occurs first repeated value.
+//indexOf method - is used to get the index value is present or not  and it occurs first repeated value.
 // var a =[1,2,3,2,8,[4,8,[5,3,8, [1,2,3,4, [ 4,5,6,7,8 ]]]]];
 // var a = [10,20,30,40,30,50];
 
@@ -87,9 +86,11 @@
 
 
 ///SLICE METHOD
-
+//        [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]
 // let arr = [1,2,3,4,5,6,7,8,9,10]
 
+// console.log(  arr.slice(-6,-2)  ); 
+// console.log( arr );
 // //slice(start,end-1)
 //        ( 0, 3-1 = 2  )
 // let arr2 = arr.slice(3);
@@ -99,8 +100,14 @@
 //Splice Method-add,delete,replace
 
 // let arr = [1,2,3,4,5,6,7,8,9,10]
+
+// arr.splice(3,3,10,20,30,"123",[1,2,3],{id:1})
+// arr.splice(3,0,10,20,30,"123",[1,2,3],{id:1})
+
+// console.log( arr );
+
 //splice(start,count) 
-// //splice(start,count,elements)
+// //splice(start,count,replacing elements)
 
 // let arr2 = arr.splice(2)
 // let arr2 = arr.splice(2,5)
@@ -116,7 +123,7 @@
 //fill(values)
 //fill(value,start,end-1)
 
-// arr.fill(21);
+// arr.fill(21,3,7);
 // arr.fill(21,3);
 // arr.fill(21,3,7);
 
@@ -124,8 +131,16 @@
 
 //Concat method
 // let arr = [1,2,3,4,5,6,11,8,9,10]
+
+// let arr1 = arr;
+// let arr1 = [].concat(arr);
+
+// console.log( arr1 );
+
 // let arr2 = [10,20,3,56,67]
 
+// let arr3 = arr.concat(arr2)
+// console.log( arr3 );
 // let arr3 =  arr.concat(1,2,3,4,55,)
 // let arr3 =  [].concat(arr)
 // console.log( arr3 );
@@ -215,6 +230,33 @@
 // console.log( arr2 );
 // console.log( a,b,c );
 
+// var fName = "js";
+// var sName ='ECMA'
+
+// var a =5;
+// var b = 1
+
+// var c = a+" X "+b+
+// " = "+
+// (a*b)
+// var str  = `Good 
+// afternoon`;
+
+// console.log( c );
+
+
+// console.log( `myN
+// M`   );
+
+// // console.log( a+" X "+b+" = "+(a*b) );
+
+
+
+// console.log( `${a} X ${b} = ${a*b}`  ); //======> Template Literal
+//Template Literal/String ------->  `string ${a} string ${b}`
+
+// console.log(  fName + " is handed over to "  + sName  );
+
 
 //SORT METHOD
 
@@ -225,8 +267,57 @@
 // console.log(  c1.sort((a, b) => a - b) ); //ascending
 // console.log(  c1.sort((a, b) => b - a) ); //descending
 
+
+// var arr = [10,20,30,40,50]
+
+// console.log( arr.length );
+
+// for(i=0; i<arr.length; i++){
+//     console.log( arr[i]  );
+// }
+
+// for( val of arr  ){
+//     console.log( val );
+// }
+
+// function abc(){
+//     return "123"
+//     // console.log( "123" );
+// }
+// // console.log(abc())
+// let b = abc()
+
+// console.log( b );
+
 //FOR EACH METHOD
 
+// let arr = [10,20,30,40,50];
+// let product =1;
+// arr.forEach( function(a){
+//     product*=a;
+//     // console.log( sum ); // sum=0 ===> sum = 0+ 10 ==> sum = 150
+// } )
+// console.log( product );
+
+// let arr1 = arr.forEach( (a,b,c)=>{
+//     return( c[b]*4 );
+// }  )   // Return type is not possible in for each
+
+// console.log( arr1 );
+
+
+//Map Method
+
+// let arr = [1,2,3,4,5,6]
+
+// let arr2 = arr.map(  (val)=>{  // let var
+//     return( val*4  );
+// }  )
+// let arr2 = arr.map(  (val)=>{  // let var
+//     console.log( val*4  );
+// }  )
+
+// console.log( arr2 );
 
 // for (const i = 0; i < c1.length; ++i) 
 // {
@@ -257,7 +348,15 @@
 // }  )
 
 // console.log( c2 );
-// c1.forEach(   (a)=>{ console.log( a );}   )
+
+// let c1 = [1,2,3,4,5,6]
+// let c2 = c1.forEach(   (a,b,c)=>{ console.log( a,b,c )}   )
+// console.log( c2 );
+
+// for (const a of c1) {
+//     console.log( a );
+// }
+
 // let sum = 0;
 // c1.forEach(   (a)=>{ sum = sum+a  }   )
 // console.log( sum);
@@ -266,7 +365,18 @@
 // console.log( c3 );
 
 //Map method
+
+// function functionName(){
+//     return "Hellooooo"
+// }
+// let a = functionName()
+// console.log( a );
+
 // var c1 = [1,3,4,5,6,7]
+
+// console.log(  c1.map( function(a,b,c){return( a>1 );} )  ) 
+
+// console.log( c2 );
 
 //     let c2 = c1.map( val=> {return val*2 }  )
 //    console.log( c2 );
@@ -279,8 +389,11 @@
 
 //filter
 
-// let val = [ 100,0,300,49,301,302,50  ]
-// let val1= val.filter( (a,i,arr)=>{  return(  a>50  );   } )
+// let val = [ 25000,5000,60000,75000,100000,50000,80000 ]
+// let val1= val.filter( (a,i,arr)=>{  return( a>=50000 );   } )
+
+// console.log( val1 );
+
 // // // let val1= val.filter( (a)=>{  return( a/0  );   } )
 // // // // let val1= val.filter( (a)=>{  return( a=0  );   } )
 // console.log( val1 );
@@ -301,6 +414,7 @@
             // 420+301 = 721
             // 721+302 = 1023
             //1023+20 = 1043
+            // let sum = val.reduce( (pre,cur)=>{ return pre*cur  },5 )
 // let sum = val.reduce(function(first,second){
 //     return(first+second); 
 // })
@@ -309,15 +423,51 @@
 
 //Some & Every method
 
-// let val = [ 0,1,2,3,4,5,6  ]
-// // let val1 = val.some(  (a)=>{ return a=0 }  )
-// // let val1 = val.some(  (a)=>{ return a%2==0 }  )
-// let val2 = val.every(  (a)=>{ return a>=0 }  )
-// // let val2 = val.every(  (a)=>{ return a%2==0 }  )
-// console.log( val2 );
 
+// for (let index = 0; index < val.length; index++) {
+    
+    //     if ( val[index]%2!= 0) {
+        
+        //         console.log(val[index]);
+        //     }
+        
+        // }
+//         let val = [ 2,4,6,8,10  ]
+// // let val1 = val.every(  (a)=>{ return   }  )
+// let val1 = val.every(  (a)=>{ return a%2==0 }  )
+// // let val2 = val.every(  (a)=>{ return a>=0 }  )
+// // // let val2 = val.every(  (a)=>{ return a%2==0 }  )
+// console.log( val1 );
 
+//vanilla Javascript
+//Sort Method
 
+// let arr = [1,3,6,4,7,2,13,10,25,20]
+
+// // arr.sort( (first,second)=>{ return first-second }  )  // a<b
+// arr.sort( (a,b)=>{ return b-a }  )  // a<b
+
+// console.log( arr );
+
+//Destructuring & spread operator
+//Extracting each elements and stored in seperate variable
+
+// let arr = [[1,3,4,5],6,7,8,9,10]
+// let [a,b,c,...d] = arr
+// console.log( d[1] );
+
+// let arr1 = [...arr]
+// arr.pop()
+// arr[0][1]=45
+// console.log( arr );
+// console.log( arr1 );
+
+//Rest Parameter
+
+// function functionName(b,...a){
+//     console.log( a  );
+// }
+// functionName(1,2,3,4,5,6,7,8)
 
 // var c1= [1,2,3,4,5] ;
 
@@ -657,16 +807,16 @@
 // console.log(HOD());
 
 
-var functionName = function () {
-    console.log("Im call back");
-}
-function HOD() {
-    // return (functionName())
-    console.log("Im hod" );
-}
+// var functionName = function () {
+//     console.log("Im call back");
+// }
+// function HOD() {
+//     // return (functionName())
+//     console.log("Im hod" );
+// }
 
-// console.log(HOD());
-HOD( functionName()  )
+// // console.log(HOD());
+// HOD( functionName()  )
 
 
 // var x = 1;

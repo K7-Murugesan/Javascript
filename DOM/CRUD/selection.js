@@ -2,25 +2,31 @@
 function functionName(){
 
 
+    // let head =  document.getElementById("head1")
+    // console.log( head );
+
+    // let para = document.getElementsByClassName("para1")
+    // console.log( para[0] );
     // let h = document.getElementById("head")
     // console.log( h )
 
     // let multiTag = document.getElementsByTagName("p")
-    // console.log( multiTag[1] );
+    // console.log( multiTag );
 
-    let class1 = document.getElementsByClassName("head")
-    console.log( class1 );
+    // let class1 = document.getElementsByClassName("head")
+    // console.log( class1 );
 
-    let nameAttri = document.getElementsByName("gender")
-    console.log( nameAttri );
+    // let nameAttri = document.getElementsByName("gender")
+    // console.log( nameAttri );
 
-    // let queryByTags = document.querySelector("#head1")
-    // let queryByTags = document.querySelector(".para1")
+    // // let queryByTags = document.querySelector("#head1")
+    // // let queryByTags = document.querySelector(".para1")
     // let queryByTags = document.querySelector("p")
     // console.log( queryByTags );
-    let getByTag = document.getElementsByTagName("p")
-    let queryByTags = document.querySelectorAll("p")
-    console.log(getByTag, queryByTags );
+    // let getByTag = document.getElementsByTagName("p")
+    // let queryByTags = document.querySelectorAll("p")
+    // // console.log( queryByTags );
+    // console.log(getByTag, queryByTags );
 
 
 
@@ -42,7 +48,7 @@ function functionName(){
 
 }
 
-
+functionName()
 
 
 

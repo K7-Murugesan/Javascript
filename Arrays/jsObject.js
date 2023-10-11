@@ -7,6 +7,133 @@
 
 // console.log( arr,arr2 );
 
+// let employee = {
+//      "my id":1,
+//      name:"js",
+//      type:"dynamic"
+// }  
+// console.log( employee.id  );  //log( a,b,c  )
+// console.log( employee["my id"]  );
+// console.log( employee["name"] );
+// console.log( employee["my id"]  );
+
+// let newObj = new Object(); 
+// newObj.id = 1;
+// newObj.fName = "ES"
+// newObj.lName = 'ECMA'
+
+// console.log( newObj );
+
+
+// class MyClass{
+
+//      fName='1234';  //properties
+//      lName;
+//      constructor(fName,lName){
+//           this.fName = fName;
+//           this.lName = lName;
+//      }
+//      add(a,b){  //methods
+//           console.log( `${a+b} Im a method ${this.fName} ${this.lName}`);
+//      }
+//      sub(){
+//           this.add(2,3)
+//      }
+// }
+
+// let firstObject = new MyClass("Mocha", "LiveScript")
+// let secondObject = new MyClass("Mocha", "LiveScript")
+// let obj2 = new MyClass("Mocha", "LiveScript")
+// let obj3 = new MyClass("Mocha", "LiveScript")
+
+// firstObject.sub()
+
+// console.log(firstObject.fName);
+
+//=============================================
+
+ /// Shorthand Assigned Property
+// let id = 1
+// let fName = "Kesavan"
+// let lName = "murugesan"
+
+// let employee = {
+//      id,
+//      fName,  
+//      lName
+// }
+
+//===========================================
+
+// let car = {
+//      brand:"Kia",
+//      prize:1500000,
+//      year:2010
+// }
+
+// console.log( Object.keys(car)   );
+// console.log( Object.values(car)   );
+// console.log( Object.freeze(car)   );
+
+// car.brand = "BMW";
+
+// console.log( car );
+
+//====================================================
+
+//Function call,apply,bind
+
+// let callObj = {
+//      fName : "Bajaj",
+//      lName : "Pulsar"
+// }
+
+
+// let obj = {
+//      // fName : "Hero Honda",
+//      // lName : "H2",
+//      newFunction : function(a,b){
+//           return( "HIi"+(a+b)+this.fName );
+//      },
+//      // duplicate: function(){
+//      //      this.newFunction(4,5)
+//      // }
+// }
+// console.log( obj.fName );
+
+// obj.newFunction.call(callObj,10,20)
+// obj.newFunction.apply(callObj,[10,20])
+
+
+// let boundFunction = obj.newFunction.bind(callObj,10,20) 
+
+// console.log( boundFunction() );
+
+
+//================================================================
+
+
+// Destructuring & Spread operator for Object 
+
+// let obj = {
+//      id:1,
+//      fName:"kesavan",
+//      l:"saasd",
+//      nestObj:{ newId:1 },
+//      nestArr:[1,23,,5]
+// }
+// let {id,...d} = obj   // Destructuring
+
+// let obj1 = { ...obj }  // Spread Operator
+
+// obj.id = 5;
+// obj.nestObj.newId = 10
+// obj.nestArr[0] = 20
+
+// console.log( obj , obj1);
+
+//===========================================================
+
 // let obj = {
 //   "first Name" : ["Java","Python"],
 //   lastName : "Script",
@@ -36,38 +163,121 @@
 // console.log(  `Hi this is ${obj["first Name"]}` );
 // console.log( obj["first Name"] );
 
+//================================================================================
 
 //MATH FUNCTION____________
 
+// console.log( Math.abs(0)  );
 // console.log(  Math.abs( (1.234)  )  );
 // console.log( Math.sqrt( 625 )  );
 // console.log( Math.cbrt( 27 )  );
-// console.log( Math.pow( 6,3 )  );
-// console.log( Math.sign( 0 )  );
+// console.log( Math.pow( 3,3 )  );
+// console.log( Math.sign( 4.34232 )  );
 // console.log( Math.PI  );
+// console.log( Math.floor (Math.random()*50)  );
 // console.log( parseInt (Math.random()*100) );
 // console.log( Math.floor (Math.random()*100) );
-// console.log(  (Math.max(1,23,4,5,6,6,7,78,9)) );
+// let num = 100
+// console.log(  (Math.max(num,1,23,4,5,6,6,7,78,9)) );
 // console.log(  (Math.min(1,23,4,5,6,6,7,78,9)) );
 // console.log(  Math.round( 1.99 )  );
-// console.log(  Math.floor( 1.01 )  );
-// console.log(  Math.ceil( 2.01 )  );
+// console.log(  Math.floor( 1.99 )  );
+
+// console.log(  Math.ceil( 2.99)  );
 // console.log( Math.trunc( 2.99 ) );
 // console.log( Math.sqrt (Math.ceil( 1.99 ))  );
-// console.log(  Math.min( ...arr ) );
+
+// let arr = [1,4,7,89,123]
+// console.log(  Math.max( ...arr ) );
+
+//========================================================================
+
+//Date Function
 
 // let date = new Date();
+// console.log( date.getUTCDate() );
+
 // console.log( date.toString() );
 // console.log( date.getMonth()  );
 
+//==================================================
 
+// Call by Value & Call by Reference & Rest Paramter
 
-// function functionName(...a){
+// let a = 10, b =a ;  
 
-//         console.log( a[0]  );
+// a = 20;       
+
+// console.log( a , b );
+
+// let arr = [1,2,3,45], arr1 = arr ;
+
+// arr.pop();
+
+// console.log( arr, arr1 );
+
+// let newAr = [2,4,6,10], spArr=[...newAr]
+
+// newAr.pop()
+
+// console.log( newAr, spArr );
+
+// Rest Paramter
+
+// function functionName(...ab){
+
+//         console.log( ab );
 
 // }
-// functionName(1,2,3,4,5)
+// functionName(1,2,3,5)
+
+//=============================================================
+
+//Synchronous & asynchronous Execution
+
+// console.log( "Step1" );
+// setTimeout(()=>{
+//      console.log( "Step2" );
+// },2000) // 2s
+// setTimeout(()=>{
+//      console.log( "Step2" );
+// },1000) // 2s
+// console.log( "Step3" );
+
+//==========================================
+
+//Promise
+
+let myPromise = new Promise((resolve, reject)=>{
+     let val = parseInt (Math.random()*2)
+     if (val==0) {
+          resolve()
+     } else {
+          reject()
+     }
+})
+
+myPromise.then(()=>{ console.log( "Its head" ); })
+.catch(()=>{ console.log( "Its Tail" ); })
+
+//===============================================================
+
+// Fetch Method
+
+fetch("https://jsonplaceholder.typicode.com/posts" )
+.then((response)=>{
+     return response.json()
+})
+.then( (posts)=>{
+    posts.map( (val)=>{
+          console.log( val.id );
+    }  )
+} )
+.catch( (err)=>{
+     console.log( err );
+} )
+
+//==============================================================================
 
 
 // var object = [
@@ -276,9 +486,9 @@
 // console.log( bindObject()  );
 
 
-let obj = {
-     id : 1
-}
+// let obj = {
+//      id : 1
+// }
 
 // let newObj = Object.freeze(obj)
 

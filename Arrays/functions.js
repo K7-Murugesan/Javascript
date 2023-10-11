@@ -499,15 +499,17 @@ or default parameter values for function behavior based on different argument pa
 //The Function which accepts another function as an argument - Higher Order function
 //The Function which is sent as an argument for another function  - Call Back
 
-// function higherOrderFunction(acceptCallBack) {
-//     console.log(acceptCallBack);
-//     console.log("Im Higher Order");
-// }
-// let callBackFunction = function () {
-//     console.log("Im call back");
-// }
 
-// higherOrderFunction(callBackFunction())
+
+function higherOrderFunction() {
+    // console.log(acceptCallBack);
+    console.log("Im Higher Order");
+}
+let callBackFunction = function () {
+    console.log("Im call back");
+}
+
+higherOrderFunction(callBackFunction())
 
 function myDisplayer(something) {
     console.log(something)
@@ -547,4 +549,11 @@ myCalculator(5, 5, myDisplayer);
 // arr.push(6,7,10)
 // // arr[0][0]=35;
 // console.log( arr, arr1);
+
+
+// IIFE - Immediately Invoked Function Expresseion (Pattern) ====> Self invoked function
+
+(function () {
+    console.log( "Hii" );
+}) ()
 

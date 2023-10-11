@@ -13,6 +13,20 @@
 //}
 function sample() {
 
+
+//     let input = document.querySelector("input")
+//     var inputValue = input.value
+    
+//     let newElement =  document.createElement("h1")
+//     newElement.textContent = inputValue;
+   
+//    let parentElem = document.querySelector("body")
+
+   //    parentElem.appendChild( newElement )
+//    parentElem.prepend(newElement)
+//    parentElem.append( "newElement" )
+
+
     // const head = document.querySelector("h1");
     // const input = document.querySelector("input")
     // head.textContent = input.value
@@ -37,12 +51,17 @@ function sample() {
     // console.log( newElement );
 
 
-    // let newElement = document.createElement("div") ;
-    // const input = document.querySelector("input")
-    // newElement.innerHTML = input.value
+    let newElement = document.createElement("div") ;
+    const input = document.querySelector("input")
+    newElement.innerHTML = input.value
 
     let parentElement = document.getElementById("parent")
     parentElement.remove()
+    // parentElement.remove()
+    // let where = parentElement.children[1] 
+
+    // parentElement.insertBefore( newElement, where )
+    // parentElement.replaceChild( newElement, where )
 
     // parentElement.insertBefore(newElement, parentElement.childNodes[2])
     // parentElement.replaceChild(newElement, parentElement.children[2])

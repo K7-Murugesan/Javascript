@@ -29,7 +29,7 @@
 fetch('https://jsonplaceholder.typicode.com/users')
   .then(response => response.json())
   .then(data => {
-    data.map((val)=>console.log(val.name))
+    console.log(data);
   })
   .catch(error => {
     console.error('Fetch error:', error);

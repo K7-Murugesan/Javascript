@@ -2,7 +2,7 @@ function sample()
         {
             //PARENT
             // let list1=document.querySelector("li");
-            // // // console.log(list1);
+            // console.log(list1.parentNode);
             // console.log(list1.parentElement); 
             // console.log(list1.parentNode);
             // let para = document.querySelector("p");
@@ -10,7 +10,7 @@ function sample()
 
 
             //CHILD
-             let orderlist=document.querySelector("ol");
+            //  let orderlist=document.querySelector("ol");
 
             //  console.log( orderlist.nextElementSibling );
 
@@ -28,12 +28,12 @@ function sample()
             //SIBLING
             // let head = document.querySelector("h1");
 
-            // let hor = document.querySelector("hr")
+            let hor = document.querySelector("hr")
 
-            // console.log( hor.nextSibling );
-            // console.log( hor.nextElementSibling );
-            // console.log( hor.previousSibling);
-            // console.log( hor.previousElementSibling );
+            console.log( hor.nextSibling );
+            console.log( hor.nextElementSibling );
+            console.log( hor.previousSibling);
+            console.log( hor.previousElementSibling );
            
 
             // let li1=document.querySelector("li");

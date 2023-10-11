@@ -186,34 +186,44 @@
     // console.log(  str2.split(",") );
     
 // console.log(  str1.join().split() );
-// console.log(str.substring(3));
+
+// let arr = [1,2,3,4,5]
+// console.log( arr.toString("*") );
+// console.log( arr.join("*") );
+
+// var str = "My name is String"
+// console.log( str.split(" ") );
+
+// console.log(str.substring(4,5));
 // console.log(str.substring(3,9));
-// console.log( str.substr(3,9) ); 
+// console.log( str.substr(4,5) ); 
 // // console.log( str.substr(3)  );
 // console.log( abc.substring( 5  )  );
 // console.log( str.substring( 1,5  )  );
 // console.log( abc.substr( 1,5  )  );
-// console.log(str.endsWith("r"));
-// console.log(str.startsWith("y"));
-// console.log( str.includes( "r" )  );
-// console.log(str.repeat(3));
-// console.log(str.indexOf("r"));
-// console.log(str.lastIndexOf("r"));
+// console.log(str.endsWith("g"));
+// console.log(str.startsWith("M"));
 
+// console.log( str.includes( "z" )  );
+// console.log(str.repeat(3));
+// console.log(str.indexOf("r",10));
+// console.log(str.lastIndexOf("i",6));
+
+
+// console.log( str.replace("i", 'ye')  );
 
 // console.log(str.replace("String","JS"));
-// console.log(str.replaceAll("ing","JS"));
+// console.log(str.replaceAll("i", 'ye'));
 // console.log(str.toLowerCase());
 // console.log(str.toUpperCase());
 // console.log( str );
 // var str1 = " My name is String "
-// var str = " My name is String "
 // console.log( str );
-// console.log(str.trim());
-// console.log(str.trimEnd());
+// // console.log(str.trim());
+// // console.log(str.trimEnd());
 // console.log(str.trimStart());
 // console.log(str.charCodeAt(2));
-// console.log(str.charAt(27));
+// console.log(str.charAt(11));
 // console.log(str.concat("...I'm gonna start the race"));
 // let rupees = 'Rs.250'
 
@@ -231,12 +241,12 @@
 //  console.log(str.trimLeft());
 
 // let str = "Kes*av*an" ;
-let str = "Kes,av,an" ;
+// let str = "Kes,av,an" ;
 
 // console.log(str.repeat(2));
 
 // console.log(str.split(",").join("*"));
-console.log(str.split(","));
+// console.log(str.split(","));
 
 
 // let str = "My name is Javascript"

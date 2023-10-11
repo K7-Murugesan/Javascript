@@ -2,6 +2,13 @@
 
 function sample()
 {
+
+    // let head = document.querySelector("h1")
+
+
+
+
+
     // var head = document.querySelector("h1");
 
     // var defaultStyles = window.getComputedStyle(document.querySelector("h1"))
@@ -29,36 +36,53 @@ function sample()
 
     //Attribute manipulation
 
-//     let head = document.querySelector("h1");
+    // let head = document.querySelector("h1");
 
 //    console.log(head.getAttribute("align"));
    
 //    console.log(  head.hasAttribute("align")   );
 
-//    console.log(  head.hasAttributes("align")   );
+//    console.log(  head.hasAttributes()   );
 //    console.log(  head.hasAttributes()   );
 
     // let button = document.querySelector("button")
     // console.log(  button.hasAttributes() );
 
-    let head = document.querySelector("h1");
+    // let head = document.querySelector("h1");
 
     
-    //    head.setAttribute("align","left");
+    //    head.setAttribute("align","left")
     //    head.setAttribute("style","color:yellow; background-color:black");
-    
+    //     head.align = "right"
     //    head.removeAttribute("style")
 
 //================================================================================    
     
     //Manipulating Style or Dynamic Cascading
 
+     let head = document.querySelector("h1");
+
+     head.style.border = "3px solid black"
+
     head.style.textShadow = "5px 5px 3px black"
 
+    let computedStyle = window.getComputedStyle(head)
+
+    console.log( computedStyle.textDecoration  );
 
 
-    let computedStyle = window.getComputedStyle(document.querySelector("h1"))
+    let button = document.querySelector("button")
 
-    console.log( computedStyle.fontSize  );
+    button.addEventListener("blur", 
+    function (){
+    
+        button.style.color = "blue"
+    
+    })
+
+
+    // let computedStyle = window.getComputedStyle(document.querySelector("h1"))
+
+    // console.log( computedStyle.fontSize  );
         
 } 
