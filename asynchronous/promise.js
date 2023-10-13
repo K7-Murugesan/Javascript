@@ -54,20 +54,27 @@
 
 // Example 1
 
-let pro = new Promise((resolve, reject)=>{
-    setTimeout(()=>{
-        let rand = Math.floor( Math.random()*2 )
-        if(rand==0 && (rand="Head")) {
+// let pro = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+//         let rand = Math.floor( Math.random()*2 )
+//         if(rand==0 && (rand="Head")) {
             
-            resolve(`Its ${rand}`)
-        }
-        else if(rand="Tail") {
+//             resolve(`Its ${rand}`)
+//         }
+//         else if(rand="Tail") {
             
-            reject( `Its ${rand}` )
-        }
-    },1000)
-})
-pro.then(console.log).catch(console.log)
+//             reject( `Its ${rand}` )
+//         }
+//     },1000)
+// })
+// pro.then(console.log).catch(console.log)
+
+///============================================================
+
+///async await
+
+// async - always returns a pomise
+
 
 
 

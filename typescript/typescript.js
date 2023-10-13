@@ -1,57 +1,59 @@
+"use strict";
 //Primitive datatype
-// import { Employee } from "./types/employee.type";
-// let age:number|string|boolean= 10;
-// age = "20";
-// // age='string'
-// // console.log(age);
-// let employeeName:string = "TypeScript"
-// // employeeName=true;
-// console.log( employeeName );
-// let isBoolean: boolean = true;
-//---------------------------------------------
-//Reference type or Non-primitive type
-// let subjects:any[] = ["1", 1,true] //not applicable for other types other than string
-// let subjects:(string|number|boolean|undefined)[] = [1, "1"] //not applicable for other types other than string
-// subjects[subjects.length]=true
-var obj = { name: "typescript", release: 2012 };
-console.log(obj);
+Object.defineProperty(exports, "__esModule", { value: true });
+var frontEnd = [
+    { id: 1, fName: "Kesavan", lName: "Muugesan", salary: 50000 },
+    { id: 2, fName: "Prabha", lName: "Vathi" },
+    { fName: "James", lName: "Chithirai", id: 3 }
+];
+var arrObj = [
+    { id: 1, fName: "Kesavan",
+        lName: "Muugesan", salary: 50000,
+        bankDetails: {
+            accName: "Kesavan M",
+            accNum: 12345,
+            ifsc: "SBI00"
+        }
+    },
+    { id: 2, fName: "Prabha", lName: "Vathi", bankDetails: {
+            accName: "Kesavan M",
+            accNum: 12345,
+            ifsc: "SBI00"
+        } },
+    { fName: "James", lName: "Chithirai", id: 3,
+        bankDetails: {
+            accName: "Kesavan M",
+            accNum: 12345,
+            ifsc: "SBI00"
+        } }
+];
+var backEnd = arrObj;
+// let obj:{ name:(string|number);release:number  } = {  name:"typescript", release:2012  }
+// console.log(obj);
 // obj.name=20;
 // let employeeDetails:
-// {   name:(string|number)[];
-//     age:number;
+// {   name:any[];
+//     age:{a:number};
 //     isBoolean?:boolean
 // } = 
 // {
 //     name:['Typeop',10],
-//     age:20
+//     age:{a:20},
+//     isBoolean:true
 // }
 // let employeeDetails1:{name:string,age:number} = {
 //     name:'Typeop',
 //     age:20,
-//     //isMajor:true //is not applicable bcoz the type of object has been defined
+// // isMajor:true //is not applicable bcoz the type of object has been defined
 // }
 // let multiObject: {name:string; age?:number}[] = 
 // [
 //     {name:"Typed language",age:40},
-//     {name:"Static typd"}
+//     {name:"Static typd"},
+//         { age:50, name:"SuperSet"   }
 // ]
-// let employeesObj: {name:any[]} = { name:[]  }
-// let employeesObj: {}[] = [{name:"Array"},{age:30},"typescript"]
-// let employeesObjType: {name:string;age:number;isBoolean:boolean}[] = [
-//     {name:"Array",age:30,isBoolean:true},
-//     {name:"Object",age:35,isBoolean:false}
-// ]    ///it is more complex to read
-//--------------------------------------
-// type Employee = {name:string;age:number;isBoolean?:boolean}; 
-// // //     //it is a type to define the structure--->not a variable or not a named memory
-// let employees: Employee[] = [
-//     {name:"Array",age:30,isBoolean:true},
-//     {name:"Object",age:35,isBoolean:false},
-//     {name:"Object",age:35},
-// ]
-// let newObj: Employee[] = []
-//-------------------------------------------------------------------------
-// import { Employee } from "./types/employee.type";
+// let employeesObj: {name:any[]} = { name:[1,"2"]  }
+var employeesObj = [{ name: "Array" }, { age: 30 }, "typescript", true];
 // import {Employee5} from './types/employee.type'
 // let a:  Employee[] = [ {name:"Static",age:35,isBoolean:true} ]
 //This is called type aliases 
@@ -85,22 +87,24 @@ through error Bcoz here im not mentioning the type of null*/
      the type...simply we will get JSON data..After fetching a data
      if im assigning that JSON data to one variable
       i can specify the particular type */
-//        let employees  = [
-//                 {name:"Array",age:"30",isBoolean:false},
-//                 {name:"Array",age:"12",isBoolean:false},
-//                 {name:"Array",age:12,isBoolean:false},
-//        ]
 //             console.log( employees[0].gender  ); //output: undefined
 //             //here we will use some assertion in two way  
 //            console.log( typeof(newEmployees)  );
-// let str:(string|number) = "Open Source"
-// str = 10;
-// let str1 = str as unknown ;
-// console.log( typeof(str1) );
+var str = "Open Source";
+str = true;
+//       let str1 = str as boolean;
+var str1 = str;
+//       console.log( typeof(str1) );
+var employees = [
+    { name: "Array", age: "12", isBoolean: false },
+    { name: "Array", age: 45, isBoolean: false },
+    { name: "Array" },
+];
+console.log(employees[2].newAge);
 //    let newEmployees = employees as Employee[] ;
-// (OR)
-// let newEmployees = <Employee[]>employees ;
-// console.log( newEmployees[0].gender  ); //here autocompletion is not proper
+//                    // (OR)
+var newEmployees = employees;
+//      console.log( newEmployees[0].gender  ); //here autocompletion is not proper
 ///We can fix a property as optional using ? inside object         
 // let someValue: any = "This is a string";
 // let strLength = someValue.length;

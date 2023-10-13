@@ -8,6 +8,8 @@ function sample()
             // let para = document.querySelector("p");
             // console.log( para.parentElement );
 
+            // let ol = document.querySelector('ol')
+            // console.log( ol.parentNode );
 
             //CHILD
             //  let orderlist=document.querySelector("ol");
@@ -28,12 +30,12 @@ function sample()
             //SIBLING
             // let head = document.querySelector("h1");
 
-            let hor = document.querySelector("hr")
+            // let hor = document.querySelector("hr")
 
-            console.log( hor.nextSibling );
-            console.log( hor.nextElementSibling );
-            console.log( hor.previousSibling);
-            console.log( hor.previousElementSibling );
+            // console.log( hor.nextSibling );
+            // console.log( hor.nextElementSibling );
+            // console.log( hor.previousSibling);
+            // console.log( hor.previousElementSibling );
            
 
             // let li1=document.querySelector("li");
@@ -42,7 +44,7 @@ function sample()
             //  console.log(li1.nextElementSibling);
             // console.log(li1.previousElementSibling);
         }
-       // sample(); ------>
+       sample(); 
 
     //     function fun(){
     //     console.log(this)

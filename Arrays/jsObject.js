@@ -83,25 +83,28 @@
 
 //Function call,apply,bind
 
-// let callObj = {
-//      fName : "Bajaj",
-//      lName : "Pulsar"
-// }
+let callObj = {
+     fName : "Bajaj",
+     lName : "Pulsar"
+}
 
 
-// let obj = {
-//      // fName : "Hero Honda",
-//      // lName : "H2",
-//      newFunction : function(a,b){
-//           return( "HIi"+(a+b)+this.fName );
-//      },
-//      // duplicate: function(){
-//      //      this.newFunction(4,5)
-//      // }
-// }
+let obj = {
+     // fName : "Hero Honda",
+     // lName : "H2",
+     // newFunction : function(a,b){
+     //      console.log(( "HIi"+(a+b)+this.fName ));
+     // },
+     // duplicate: function(){
+     //      this.newFunction(4,5)
+     // }
+}
 // console.log( obj.fName );
 
-// obj.newFunction.call(callObj,10,20)
+// let newVar = obj.newFunction.call(callObj,10,20)
+
+// console.log( newVar  );
+
 // obj.newFunction.apply(callObj,[10,20])
 
 
@@ -248,34 +251,34 @@
 
 //Promise
 
-let myPromise = new Promise((resolve, reject)=>{
-     let val = parseInt (Math.random()*2)
-     if (val==0) {
-          resolve()
-     } else {
-          reject()
-     }
-})
+// let myPromise = new Promise((resolve, reject)=>{
+//      let val = parseInt (Math.random()*2)
+//      if (val==0) {
+//           resolve()
+//      } else {
+//           reject()
+//      }
+// })
 
-myPromise.then(()=>{ console.log( "Its head" ); })
-.catch(()=>{ console.log( "Its Tail" ); })
+// myPromise.then(()=>{ console.log( "Its head" ); })
+// .catch(()=>{ console.log( "Its Tail" ); })
 
 //===============================================================
 
 // Fetch Method
 
-fetch("https://jsonplaceholder.typicode.com/posts" )
-.then((response)=>{
-     return response.json()
-})
-.then( (posts)=>{
-    posts.map( (val)=>{
-          console.log( val.id );
-    }  )
-} )
-.catch( (err)=>{
-     console.log( err );
-} )
+// fetch("https://jsonplaceholder.typicode.com/posts" )
+// .then((response)=>{
+//      return response.json()
+// })
+// .then( (posts)=>{
+//     posts.map( (val)=>{
+//           console.log( val.id );
+//     }  )
+// } )
+// .catch( (err)=>{
+//      console.log( err );
+// } )
 
 //==============================================================================
 

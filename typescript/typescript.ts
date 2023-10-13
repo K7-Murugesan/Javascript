@@ -2,8 +2,17 @@
 
 // import { Employee } from "./types/employee.type";
 
+// let a:any = 10;
+// // Union type ===> let a:(number|string|boolean)
+// a="Im in";
+// a=true;
+// a=undefined;
+// a=[1,3,6,7]
 
+// console.log( a );
 
+// let b:boolean = true;
+// let str:string = "qwertt"
 
 // let age:number|string|boolean= 10;
 // age = "20";
@@ -21,9 +30,49 @@
 
 //Reference type or Non-primitive type
 
+// let arr: any[] = [1,"2",3,true,undefined];
+
+// arr[0] = 45
+
+
 // let subjects:any[] = ["1", 1,true] //not applicable for other types other than string
 // let subjects:(string|number|boolean|undefined)[] = [1, "1"] //not applicable for other types other than string
 // subjects[subjects.length]=true
+
+// let obj: { id:number, name:string, fName?:string  } = { name:"bhavana", id:1 };
+
+
+
+
+let frontEnd:  {id:number; fName:string, lName:string, salary?:number}[]  = [
+         {id:1, fName:"Kesavan", lName:"Muugesan", salary:50000},
+         {id:2, fName:"Prabha", lName:"Vathi"},
+         { fName:"James", lName:"Chithirai", id:3   }
+]
+let arrObj:  facultyDetails[] | null = [
+         {id:1, fName:"Kesavan", 
+         lName:"Muugesan", salary:50000,
+         bankDetails:{
+                accName:"Kesavan M",
+                accNum:12345,
+                ifsc:"SBI00"
+         }
+        },
+         {id:2, fName:"Prabha", lName:"Vathi",bankDetails:{
+                accName:"Kesavan M",
+                accNum:12345,
+                ifsc:"SBI00"
+         }},
+         { fName:"James", lName:"Chithirai", id:3,
+                bankDetails:{
+                accName:"Kesavan M",
+                accNum:12345,
+                ifsc:"SBI00"
+         }  }
+]
+
+let backEnd = arrObj as facultyDetails[]
+
 
 // let obj:{ name:(string|number);release:number  } = {  name:"typescript", release:2012  }
 
@@ -56,7 +105,7 @@
 // ]
 
 // let employeesObj: {name:any[]} = { name:[1,"2"]  }
-let employeesObj: {}[] = [{name:"Array"},{age:30},"typescript",true]
+// let employeesObj: {}[] = [{name:"Array"},{age:30},"typescript",true]
 
 // let employeesObjType: {name:string;age:number;isBoolean:boolean}[] = [
 //     {name:"Array",age:30,isBoolean:true},
@@ -74,7 +123,7 @@ let employeesObj: {}[] = [{name:"Array"},{age:30},"typescript",true]
 // let newObj: Employee[] = []
 //-------------------------------------------------------------------------
 
-import { Employee } from "./types/employee.type";
+import { Employee, facultyDetails } from "./types/employee.type";
 
 // import {Employee5} from './types/employee.type'
 
@@ -131,20 +180,23 @@ Using Union type you can specify another type like null  */
       
 //       str = true;
       
-//       let str1 = str as unknown ;
+//       let str1 = str as boolean;
+//       let str1 = <boolean> str ;
 //       console.log( typeof(str1) );
       
       
 //       let employees  = [
-//                {name:"Array",age:"30",isBoolean:false},
 //                {name:"Array",age:"12",isBoolean:false},
 //                {name:"Array",age:45,isBoolean:false},
 //                {name:"Array"},
 //       ]
+//      console.log(employees[2].newAge  );
+      
+
 //    let newEmployees = employees as Employee[] ;
-                   // (OR)
+//                    // (OR)
         // let newEmployees = <Employee[]>employees ;
-            // console.log( newEmployees[0].gender  ); //here autocompletion is not proper
+        //      console.log( newEmployees[0].gender  ); //here autocompletion is not proper
 
 ///We can fix a property as optional using ? inside object         
  

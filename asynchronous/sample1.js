@@ -92,14 +92,23 @@ console.log( a-true )
 
 //Function
         //Code runner to run the code
-function add(a,b){
-    console.log( "Im a fuction" + a + b);
-}
-add()
+// function add(a,b){
+//     console.log( "Im a fuction" + a + b);
+// }
+// add()
 
-//Default argument or parameter
-function defaultF(a=1,b=1){
-    console.log( "Im a fuction" + a + b);
+// //Default argument or parameter
+// function defaultF(a=1,b=1){
+//     console.log( "Im a fuction" + a + b);
+// }
+// defaultF(2,3)
+// defaultF(2)
+var a = 10;
+
+if (a>5) {
+    console.log("hii");
+} else {
+    console.log("No");
 }
-defaultF(2,3)
-defaultF(2)
+
+console.log((a>5)?"hii":"No")

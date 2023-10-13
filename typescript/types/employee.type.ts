@@ -11,6 +11,19 @@ export type Employee4 = {name:string;age:number;isBoolean:boolean};
 export type Employee5 = {name:string;age:number;isBoolean:boolean}; 
 export type Employee6 = {name:string;age:number;isBoolean:boolean}; 
 
+
+export type facultyDetails = 
+{       id:number; 
+        fName:string, 
+        lName:string, 
+        salary?:number,
+        bankDetails:{
+                accName:string,
+                accNum:number,
+                ifsc:string
+        }
+};
+
         //Just for flexibility
 
 // export type Employee = { 

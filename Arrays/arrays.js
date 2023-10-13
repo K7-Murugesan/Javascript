@@ -1,11 +1,20 @@
-var a=[10,"FSD Batch",true,undefined,null,[5,6,7],{ batch:"2FE" }]
+// var a=[10,"FSD Batch",true,undefined,null,[5,6,7],{ batch:"2FE" }]
 
+// var b = a;
+
+// var d =[...a]
+
+// var e = a.concat()
+// console.log(e);
+
+// var f = a.slice(3);
+// console.log( f );
 // console.log(a[a.length-1]);
 
-for (let index = 0; index < a.length; index++) {
-    console.log( a[index] );
+// for (let index = 0; index < a.length; index++) {
+//     console.log( a[index] );
     
-}
+// }
 // console.log(a[3]);
 // console.log(a[a.length-1]);
 // console.log(a[a.length-2][0]);
