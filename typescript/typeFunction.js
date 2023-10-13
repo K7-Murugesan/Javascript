@@ -1,10 +1,14 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+// import { Employee } from "./types/employee.type";
 //function
 //Parameter & argument
 //Default value
 //optional parameter
-// console.log( person.name  );
+function fName(a, b) {
+    if (a === void 0) { a = "abcd"; }
+    console.log(a + b);
+}
+fName(undefined, 2);
+// console.log( person.fname  );
 // function add(a:string,b:number) {
 //     return( a+b );
 // }console.log(add( "1",2  ));
@@ -12,14 +16,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     console.log( person.age );
 // }
 // add( )
-// let name: string = "TypeFunction";
+// let fname: string = "TypeFunction";
 // let age = 20;
 // let isBoolean = true
 // function add() {
-//     let name: string = "StrongTyped";
+//     let fname: string = "StrongTyped";
 //     let isBoolean = false
 //     const person: Employee = {
-//         name,
+//         fname,
 //         age,
 //         isBoolean
 //     }
@@ -27,34 +31,30 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // }
 // add()
 // const person: Employee = {
-//     name:"w234",
+//     fname:"w234",
 //     age:45,
 //     isBoolean:true
 // }
 //Return a value--------------------------------------------------
-// function printName(newName:string,newAge:number):(number|string) {
+// function printfName(newfName:string,newAge:number):(number|string) {
 //     // here function is not returning anything so by default the return type is void
-//     const fllName = newName + " s " + newAge 
+//     const fllfName = newfName + " s " + newAge 
 // }
-// printName() //apply type casting 
-// function printName(name){
-//     console.log( name );
+// printfName() //apply type casting 
+// function printfName(fname){
+//     console.log( fname );
 // }
-// printName('Kesavan');
-// printName(10);
+// printfName('Kesavan');
+// printfName(10);
 //Optional parameter
-// function printPerson(name:string="Something", age?:number, isMajor:boolean) { //Optional always at end
-// function printPerson(name:string="Something", age?:number, isMajor?:boolean) {
-//     console.log( name );
+// function printPerson(fname:string="Something", age?:number, isMajor:boolean) { //Optional always at end
+// function printPerson(fname:string="Something", age?:number, isMajor?:boolean) {
+//     console.log( fname );
 //     console.log( age );
 //     console.log( isMajor );   
 // }
 // printPerson(undefined,20,true)
-function personName() {
-    var alphabetWords = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        alphabetWords[_i] = arguments[_i];
-    }
-    console.log(alphabetWords[0]);
-}
-personName("Apple", "Mango", "banana", "watermelon", "strawberry");
+// function  personfName(...alphabetWords) {
+//     console.log( alphabetWords[0]  );
+// }
+// personfName("Apple")

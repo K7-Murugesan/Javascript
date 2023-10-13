@@ -73,6 +73,9 @@ let arrObj:  facultyDetails[] | null = [
 
 let backEnd = arrObj as facultyDetails[]
 
+type duplicateArr = number[]
+
+let arr: duplicateArr[] = [ [1,2,3,4,5],[1,2,3,4,5],[1,2,3,4,5]  ]
 
 // let obj:{ name:(string|number);release:number  } = {  name:"typescript", release:2012  }
 

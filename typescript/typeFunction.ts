@@ -1,13 +1,18 @@
-import { Employee } from "./types/employee.type";
+// import { Employee } from "./types/employee.type";
 
 //function
 //Parameter & argument
 //Default value
 //optional parameter
 
+function fName(a="abcd", b:number) {
+    console.log( a+b );
+    
+}
+fName(undefined,2)
 
 
-// console.log( person.name  );
+// console.log( person.fname  );
 
 
 // function add(a:string,b:number) {
@@ -19,15 +24,15 @@ import { Employee } from "./types/employee.type";
 
 // }
 // add( )
-// let name: string = "TypeFunction";
+// let fname: string = "TypeFunction";
 // let age = 20;
 // let isBoolean = true
 // function add() {
-//     let name: string = "StrongTyped";
+//     let fname: string = "StrongTyped";
    
 //     let isBoolean = false
 //     const person: Employee = {
-//         name,
+//         fname,
 //         age,
 //         isBoolean
 //     }
@@ -38,38 +43,41 @@ import { Employee } from "./types/employee.type";
 // add()
 
 // const person: Employee = {
-//     name:"w234",
+//     fname:"w234",
 //     age:45,
 //     isBoolean:true
 // }
 //Return a value--------------------------------------------------
 
-// function printName(newName:string,newAge:number):(number|string) {
+// function printfName(newfName:string,newAge:number):(number|string) {
 //     // here function is not returning anything so by default the return type is void
-//     const fllName = newName + " s " + newAge 
+//     const fllfName = newfName + " s " + newAge 
 // }
-// printName() //apply type casting 
+// printfName() //apply type casting 
 
 
-// function printName(name){
-//     console.log( name );
+// function printfName(fname){
+//     console.log( fname );
 // }
-// printName('Kesavan');
-// printName(10);
+// printfName('Kesavan');
+// printfName(10);
 
 //Optional parameter
 
-// function printPerson(name:string="Something", age?:number, isMajor:boolean) { //Optional always at end
-// function printPerson(name:string="Something", age?:number, isMajor?:boolean) {
-//     console.log( name );
+// function printPerson(fname:string="Something", age?:number, isMajor:boolean) { //Optional always at end
+// function printPerson(fname:string="Something", age?:number, isMajor?:boolean) {
+//     console.log( fname );
 //     console.log( age );
 //     console.log( isMajor );   
 // }
 // printPerson(undefined,20,true)
 
 
-// function  personName(...alphabetWords) {
+// function  personfName(...alphabetWords) {
 //     console.log( alphabetWords[0]  );
 // }
-// personName("Apple")
+// personfName("Apple")
 
+// Tuple
+
+let arr:[(number|null),(string|boolean)] = [null,true]
