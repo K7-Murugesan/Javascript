@@ -14,7 +14,7 @@
 // let b:boolean = true;
 // let str:string = "qwertt"
 
-// let age:number|string|boolean= 10;
+let age:number|string|boolean= 10;
 // age = "20";
 
 // // age='string'
