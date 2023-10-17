@@ -152,11 +152,11 @@ that a variable or parameter can have one or several possible types.
 /*while fetching a data from database, if it is an empty data..
 Using Union type you can specify another type like null  */
 
-// let employees: Employee[] | null = [
-//         {name:"Array",age:30,isBoolean:true},
-//         {name:"Object",age:35,isBoolean:false}
-//  ]
-// let newEmployees: Employee[] = employees;
+let employees: Employee[] | null = [
+        {name:"Array",age:30,isBoolean:true},
+        {name:"Object",age:35,isBoolean:false}
+ ]
+let newEmployees: Employee[] = employees;
 //==========================OR==============================//
 // let employees: Employee[] | null = null
 // let newEmployees: Employee[] = employees; 
@@ -166,7 +166,9 @@ Using Union type you can specify another type like null  */
 //=========================================================//
 
 
-// TYPE ASSERTIONS or TYPE CASTING
+
+
+
 
 //explicitly i can define a value type
 /*if im getting data from database..there we cant mention

@@ -1,9 +1,9 @@
-var a = 8;
-var b = Boolean(0)
-console.log( b );
-// var b = '8'
+// var a = 8;
+// var b = Boolean(0)
+// console.log(b);
+// // var b = '8'
 
-console.log( a-true )
+// console.log(a - true)
 
 // console.log( a**3  );
 
@@ -69,7 +69,7 @@ console.log( a-true )
 // for ( index = 1; index <= 10; index++) {
 
 //    console.log( index );
-    
+
 // }
 
 
@@ -86,12 +86,12 @@ console.log( a-true )
 
 
 // let num = prompt("Enter a number");
-    
+
 // alert(num)
 
 
 //Function
-        //Code runner to run the code
+//Code runner to run the code
 // function add(a,b){
 //     console.log( "Im a fuction" + a + b);
 // }
@@ -105,10 +105,73 @@ console.log( a-true )
 // defaultF(2)
 var a = 10;
 
-if (a>5) {
-    console.log("hii");
-} else {
-    console.log("No");
-}
+// if (a > 5) {
+//     console.log("hii");
+// } else {
+//     console.log("No");
+// }
 
-console.log((a>5)?"hii":"No")
+// console.log((a > 5) ? "hii" : "No")
+
+
+// let _fName = "sdfjs";
+
+
+// function fName() {
+//     var a = 10
+//     console.log("Hello" + _fName);
+
+// }
+// fName();
+
+// function functionName() {
+
+//     console.log(a);
+
+// }
+
+
+// function functionName() {
+
+//     let a = 10;
+//     function functionName() {
+
+//         console.log(a);
+
+//     }
+// }
+
+
+
+// class Template {
+//     // fName
+//     // lName
+//     constructor(fName, lName) {
+//         this.fName = fName;
+//         this.lName = lName;
+//     }
+//     firstName() {    
+//         console.log(this.fName + this.lName );
+//     }
+// }
+
+// let newObj = new Template("xyz", 'abc')
+
+// newObj.firstName()
+
+// console.log( newObj );
+
+
+function sortArray(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i+1; j < arr.length; j++) {
+            if( arr[i]>arr[j] ){
+                let temp = arr[i];
+                 arr[i] = arr[j];
+                 arr[j] = temp;      
+            }  
+        }    
+    }
+    console.log( arr );
+}
+sortArray([5,2,4,1,3,7,6])

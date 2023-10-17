@@ -30,3 +30,10 @@ finally{
 // finally{
 //     console.log( "Bye" );
 // }
+
+
+
+function sortArray( arr  ){
+    
+}
+sortArray([5,7,3,4,1,2,6])
