@@ -103,7 +103,7 @@
 // }
 // defaultF(2,3)
 // defaultF(2)
-var a = 10;
+// var a = 10;
 
 // if (a > 5) {
 //     console.log("hii");
@@ -162,16 +162,107 @@ var a = 10;
 // console.log( newObj );
 
 
-function sortArray(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i+1; j < arr.length; j++) {
-            if( arr[i]>arr[j] ){
-                let temp = arr[i];
-                 arr[i] = arr[j];
-                 arr[j] = temp;      
-            }  
-        }    
-    }
-    console.log( arr );
-}
-sortArray([5,2,4,1,3,7,6])
+// function sortArray(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = i+1; j < arr.length; j++) {
+//             if( arr[i]>arr[j] ){
+//                 let temp = arr[i];
+//                  arr[i] = arr[j];
+//                  arr[j] = temp;      
+//             }  
+//         }    
+//     }
+//     console.log( arr );
+// }
+// sortArray([5,2,4,1,3,7,6])
+
+
+// clas`s GlobalScope{
+//     a=10;
+//     b=20;
+//     newFucnction(){
+//         // var b=20;
+//     }
+// }
+
+// class DuplicateObject{
+//     constructor(){
+//         console.log( a );
+//     }
+// }
+
+// let globalScope = new GlobalScope()
+
+// let duplicateObject = new DuplicateObject()`
+
+// let obj1 = {
+//     "id":1,
+//     "name":[]
+// }
+
+// let obj = {
+//     options:{
+//         $options:{
+//             start_data:100
+//         }
+//     },
+//     booking: function(a,b){
+//        console.log( this.options.carProduct.start_data ); 
+//     }
+// }
+
+// obj.booking(1,2)
+
+
+//Currying
+
+// function name(a) {
+//     return function fname(b){
+//         console.log( "Hiii "+ (a+b) );
+    
+//     }
+// }
+// name(3)(6)
+
+
+// let a = "10";
+// let b = "11"
+// a = "ecmaScript"
+// a=true;
+
+// console.log( a-b ); // Implicit Conversion or Type Coercion
+// console.log( Boolean(-45) ); //Explicit Conversion  
+
+// var CurrentCourse = "Javascript" //PascalCase
+// var CurrentCourse = "Javascript"
+// var current_course_abc_def = "ECMA Script"
+
+// let str = "Loosely";
+// let str1 = "Typed"
+
+//Template Literal / Template String
+// console.log( "Javascript is a "+
+// str
+// +" "+str1+ " Language"  );
+
+// console.log( `Javascript is 
+// a ${str} 
+// ${str1} 
+// Language`   );  // ${}-String Interpolation
+
+
+// console.log( "Dynamically Types"  );
+// console.log( `Dynamically 
+// Typed`  );
+
+var num1 = 20, num2 = 2;
+
+console.log( num1+num2  );
+console.log( num1-num2  );
+console.log( num1*num2  );
+console.log( num1%num2  );
+console.log( num1/num2  );
+console.log( num1**num2  );
+
+
+
