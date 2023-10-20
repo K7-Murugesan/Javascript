@@ -11,7 +11,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log( a );
 // let b:boolean = true;
 // let str:string = "qwertt"
-var age = 10;
+let age = 10;
 // age = "20";
 // // age='string'
 // // console.log(age);
@@ -27,12 +27,12 @@ var age = 10;
 // let subjects:(string|number|boolean|undefined)[] = [1, "1"] //not applicable for other types other than string
 // subjects[subjects.length]=true
 // let obj: { id:number, name:string, fName?:string  } = { name:"bhavana", id:1 };
-var frontEnd = [
+let frontEnd = [
     { id: 1, fName: "Kesavan", lName: "Muugesan", salary: 50000 },
     { id: 2, fName: "Prabha", lName: "Vathi" },
     { fName: "James", lName: "Chithirai", id: 3 }
 ];
-var arrObj = [
+let arrObj = [
     { id: 1, fName: "Kesavan",
         lName: "Muugesan", salary: 50000,
         bankDetails: {
@@ -53,8 +53,8 @@ var arrObj = [
             ifsc: "SBI00"
         } }
 ];
-var backEnd = arrObj;
-var arr = [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]];
+let backEnd = arrObj;
+let arr = [[1, 2, 3, 4, 5], [1, 2, 3, 4, 5], [1, 2, 3, 4, 5]];
 // import {Employee5} from './types/employee.type'
 // let a:  Employee[] = [ {name:"Static",age:35,isBoolean:true} ]
 //This is called type aliases 
@@ -71,22 +71,17 @@ that a variable or parameter can have one or several possible types.
  You create a union type by using the | operator to separate the individual types. */
 /*while fetching a data from database, if it is an empty data..
 Using Union type you can specify another type like null  */
-var employees = [
+let employees = [
     { name: "Array", age: 30, isBoolean: true },
     { name: "Object", age: 35, isBoolean: false }
 ];
-var newEmployees = employees;
+let newEmployees = employees;
 //==========================OR==============================//
 // let employees: Employee[] | null = null
 // let newEmployees: Employee[] = employees; 
 /*while asssigning employees varialble to another variable it will
 through error Bcoz here im not mentioning the type of null*/
 //=========================================================//
-// TYPE ASSERTIONS or TYPE CASTING
-var a = "ts";
-var b = a.length;
-var b = a.length;
-console.log(b);
 //explicitly i can define a value type
 /*if im getting data from database..there we cant mention
      the type...simply we will get JSON data..After fetching a data

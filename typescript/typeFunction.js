@@ -1,10 +1,10 @@
+"use strict";
 // import { Employee } from "./types/employee.type";
 //function
 //Parameter & argument
 //Default value
 //optional parameter
-function fName(a, b) {
-    if (a === void 0) { a = "abcd"; }
+function fName(a = "abcd", b) {
     console.log(a + b);
 }
 fName(undefined, 2);
@@ -58,3 +58,5 @@ fName(undefined, 2);
 //     console.log( alphabetWords[0]  );
 // }
 // personfName("Apple")
+// Tuple
+let arr = [null, true];

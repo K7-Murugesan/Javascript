@@ -219,7 +219,7 @@
 // function name(a) {
 //     return function fname(b){
 //         console.log( "Hiii "+ (a+b) );
-    
+
 //     }
 // }
 // name(3)(6)
@@ -255,14 +255,218 @@
 // console.log( `Dynamically 
 // Typed`  );
 
-var num1 = 20, num2 = 2;
+// var num1 = 20, num2 = 2;
 
-console.log( num1+num2  );
-console.log( num1-num2  );
-console.log( num1*num2  );
-console.log( num1%num2  );
-console.log( num1/num2  );
-console.log( num1**num2  );
+// console.log( num1+num2  );
+// console.log( num1-num2  );
+// console.log( num1*num2  );
+// console.log( num1%num2  );
+// console.log( num1/num2  );
+// console.log( num1**num2  );
 
 
+// var a = 2;
+// var c;
+// var b;
 
+// a = a++; 
+// b = ++a; 
+
+// console.log( a,b );
+
+// a = a++; 
+// b = a++;
+
+// console.log( a,c,b );
+
+//Assignment Operator
+
+// let a = 4;
+
+// a%=2 // a = a%2
+// a +=10;
+// a-=4
+// console.log( a );
+// console.log(a**6);
+
+// console.log( !(a==0)  );
+
+
+//Switch Case
+
+// var a = 'abc';
+
+// switch(a){
+//     case "Monday": console.log("weekday");
+//     break;
+//     case "Tuesday": console.log( "Weekday" );
+//     break;
+//     default : console.log("Not a day");
+//     break;
+// }
+
+//========= while loop
+
+// let a = 1;
+// let b = 10;
+
+// while(a<b){
+//     console.log( a );
+//     a++;
+// }
+
+// console.log( a );
+
+// let a = 0;
+// let b = [10,12,13,14,15];
+
+// while(a<b.length){
+//     console.log( b[a] );
+//     a++;
+// }
+
+// let a = 10;
+// let b = "javascript";
+
+// while(a<b.length){
+//     console.log( b.charAt(a) );
+//     a++;
+// }
+
+//======== do-while loop
+
+// let num = 13
+// do{
+// console.log( num );
+// num++
+// }
+// while(num<=10)
+
+//===========FUNCTION
+
+// function abc(a,b){
+//     console.log( "Function"+a[0]+b );
+// }  //Function declaration
+// abc([2,3,5],3); //Function invoke/call
+
+//default argument/paramter
+// function abc(a=3,b=10){
+//     console.log( "Function"+a+b );
+// }  //Function declaration
+// abc(undefined,12); 
+// abc(3,12);
+
+//VAR VS LET VS CONST DIFFERENCE
+
+// var a = 10;
+// a = 20; //Re Assign or Re initialize is possible
+// var a = 30; //Re declare is possible
+// console.log( a );
+
+// let a = 10;
+//  a = 20; // Re assign is possible
+// let a = 50; //Redeclare not possible
+// console.log( a );
+
+//  a = 20; // Re assign is possible
+// const a = 50; //Redeclare not possible
+// a = 30;
+// console.log( a );
+
+// const a = [10,29,30];
+// a.push(45,59,60) 
+// // redeclare and reassign is not possible
+// console.log( a );
+
+//Var is a function scope
+// function ab() {
+//     if (true) {
+//        if (true) {
+//             var a = 10
+//        }
+//     }
+//     console.log( a );
+// }
+// ab();
+
+//let & const --->block scope
+// var c = 20;
+// let b = 30;
+// const a = 10
+
+// function ab() {
+//     // var c = 12;
+//     // let b = 23;
+//     // const a = 10
+
+//     function xyz() {
+//         // var c = 12;
+//         // let b = 23;
+//         // const a = 10
+//         if (true) {
+//             if (true) {
+//                 if (true) {  
+//                     console.log( a+b+c );
+//                 }
+//            }
+//         }
+//     }
+//     xyz()
+//     console.log( a+c+b  );
+// }
+// console.log( a+b+c );
+// ab();
+
+
+//========= Function types
+
+//Named/Normal Function
+
+// function name() {
+//     console.log( "Normal function" );
+// }
+// name()
+
+//Ananomous Function or Function Expression
+
+// let abc = function (a,b) {
+//     console.log( "Ananomous function"+(a+b) );
+// }
+// abc(5,8)
+
+//Arrow Function
+
+// let xyz =  (a,b)=> {
+//     console.log( "Arrow function"+(a*b) );
+// }
+// xyz(1,2)
+
+//==========Higher Order Function & Call Back Function
+
+// function HoF(param) {
+//     param(3,4)
+//     console.log( "Im a Hod Function" );
+// }
+
+
+// function callBack(a,b){
+//     console.log( "Im a call Back "+ (a+b)  );
+// }  
+
+// HoF( callBack );
+//HigherOrderFunction(CallBackFunction)
+
+//====IIFE(Immediately Invoked Function Expression)-->Pattern
+
+// ( ()=> {
+//     console.log("Self invoke");
+// })()
+
+//======>Array
+
+let arrName = [1, "two", true, [1, 2, 3], { id: 1 }, , 2, , 4, 5, 6, 6, 7, 8, 88]
+
+console.log(arrName);
+
+console.log( arrName.length );
+console.log( arrName[arrName.length-2]);

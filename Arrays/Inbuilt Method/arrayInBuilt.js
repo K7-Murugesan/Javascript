@@ -19,7 +19,6 @@
 // console.log(b);
 
 //shift method
-
 // var c=[1,2,3,4,5]
 // console.log(c.shift());
 // console.log(c);
@@ -27,18 +26,22 @@
 //unshift method
 // var d =[ 1,2,3,4,5];
 //   d.unshift(12,"12",3,-1,-10)  ;  
-// console.log( d );
-// d.push(6,7,8);
+//   d.push(6,7,8);
+//   console.log( d );
 
 // console.log(d);
 
 //includes method
 //  var a1 =[1,2,3,4,5];
-//  console.log(a1.includes(7));  
+//  console.log(a1.includes(3));  
 
 //indexOf method - is used to get the index value is present or not  and it occurs first repeated value.
 // var a =[1,2,3,2,8,[4,8,[5,3,8, [1,2,3,4, [ 4,5,6,7,8 ]]]]];
-// var a = [10,20,30,40,30,50];
+// var a = [30,10,20,30,40,30,50,30];
+// console.log( a.indexOf(30,3)  );
+// console.log( a.lastIndexOf(30,2)  );
+
+
 
 // let b = a.indexOf(30,5);
 //      ( element,index starts search from left to right )
@@ -50,13 +53,19 @@
 //flat method
 // var a =[1,2,3,2,8,[4,[2,3],[ 3,4,5,6,[7,8,10,[123,12,1213]] ]]];
 
+// let arr = [1,2,[3,[4,1,[2,3,4,55],6],7,8, [1,23,4,5,6]]]
+
+// let arr1 = arr.flat(Infinity)
+
+// console.log( arr1 );
+
 // var a = [1,2,3,[4,5,[12,34],56,6], [4,5,6,7,8]]
 // //  var b = a.flat( Infinity );
 // console.log( a.flat(Infinity) );
 
 //reverse method
 // var b1=[1,2,3,4,5]
-// console.log(b1.reverse());
+// b1.reverse();
 // console.log(b1);
 
 // // sort method
@@ -87,19 +96,23 @@
 
 ///SLICE METHOD
 //        [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]
-// let arr = [1,2,3,4,5,6,7,8,9,10]
+// let arr = [10,20,30,40,50,60,70,80,90,10]
 
 // console.log(  arr.slice(-6,-2)  ); 
 // console.log( arr );
 // //slice(start,end-1)
 //        ( 0, 3-1 = 2  )
-// let arr2 = arr.slice(3);
+// let arr2 = arr.slice(3,8);
 // let arr2 = arr.slice(3,7);
-// console.log( arr,arr2  );
+// console.log(arr, arr2  );
 
-//Splice Method-add,delete,replace
+//========Splice Method-add,delete,replace
 
 // let arr = [1,2,3,4,5,6,7,8,9,10]
+
+// arr.splice(5,0,(11,12,13,22,23),101,102)
+
+// console.log( arr  );
 
 // arr.splice(3,3,10,20,30,"123",[1,2,3],{id:1})
 // arr.splice(3,0,10,20,30,"123",[1,2,3],{id:1})
@@ -118,22 +131,23 @@
 // console.log(  arr);
 
 
-///Fill method
+///========Fill method
 // let arr = [1,2,3,4,5,6,11,8,9,10]
 //fill(values)
 //fill(value,start,end-1)
 
 // arr.fill(21,3,7);
+// console.log( arr );
 // arr.fill(21,3);
 // arr.fill(21,3,7);
 
 // console.log(  arr );
 
-//Concat method
+//=====Concat method
 // let arr = [1,2,3,4,5,6,11,8,9,10]
 
 // let arr1 = arr;
-// let arr1 = [].concat(arr);
+// let arr1 = arr.concat(12,13,23,45,67,89);
 
 // console.log( arr1 );
 
