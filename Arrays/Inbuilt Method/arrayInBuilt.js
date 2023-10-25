@@ -277,8 +277,8 @@
 //  var c1 = [ "apple","banana",'Orange',"Strawberry","Aeroplane"  ]
 //  console.log( c1.sort() ); // Element sorted in ASCII order
 
-// var c1= [5,2,4,3,1,6,10,12,34] ;
-// console.log(  c1.sort((a, b) => a - b) ); //ascending
+var c1= [5,2,4,3,1,6,10,12,34] ;
+console.log(  c1.sort((a, b) => a - b) ); //ascending
 // console.log(  c1.sort((a, b) => b - a) ); //descending
 
 
@@ -895,3 +895,10 @@
 // let boo1 = 5 + true
 
 // console.log( boo,boo1 );
+
+function abc(a,b) {
+    console.log( "Hii" );
+    return(a+b);
+}
+//  abc(4,5);
+ console.log( abc(4,5) );

@@ -8,3 +8,6 @@ let vl=<T>(a:T,b:T,c:T)=>{
 // vl(10,20,30)
 
 let a = 10
+
+//=========DECORATORS
+
