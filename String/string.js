@@ -288,3 +288,13 @@
 
 
 
+//Template String/ Template Literal
+var a = "SPA"
+var str = "Angular is a vbv fdhdgh,dfdf dfgdfg "
++a
++11
++true
+
+var str1 = `Angular is a `
+console.log( str );
+console.log( str1 );

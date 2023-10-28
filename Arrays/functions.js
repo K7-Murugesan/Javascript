@@ -20,12 +20,15 @@
 
 //Anonymous function (or) function expression
 
-// let x = function(b,c)
-// {
-//     console.log(b-c);
+// let newFun1 = function(a){
+//     return a
 // }
-// x(10,6);
+// console.log( newFun1(3) );
 
+
+// let newFun = (a,b)=>a+b
+
+// console.log( newFun(4,10) );
 // //Arrow Functions
 
 // let x = (b,c) =>
@@ -34,9 +37,9 @@
 // }
 // x(10,6);
 
-let abc = (a, b) => console.log(a + b);
+// let abc = (a, b) => console.log(a + b);
 
-abc(1, 2)
+// abc(1, 2);
 // let y = (b,c) =>
 // {
 //     console.log(b-c);
@@ -47,17 +50,29 @@ abc(1, 2)
 // const b  = 20;
 // var c =30;
 
-// function add() 
-// {
-//     let a =20;
-//     const b  = 40;
-//     var c =60;
+// var a;
+
+// console.log(a);
+// console.log(b);
+
+
+// function add() {
+//     // var a =20;
+//     // let b  = 40;
+//     // const c = 60;
 //     if (true) {
-//       console.log( a+c+b );
-//     } 
+//         // var a =20;
+//         var b = 40;
+//         if (true) {
+//             console.log(b);
+//         }
+//         // const c = 60;
+//         //   console.log( a+c+b );
+//     }
+//     console.log(b);
 // }
 // add();
-// console.log( a+b+c  );
+// console.log(a + b + c);
 
 // var a = "Angular"
 // var b = "SPA"
@@ -66,12 +81,25 @@ abc(1, 2)
 // // syntax:   `String ${variable} String `
 
 // console.log( `${a} is used to make a ${b} `  );
-
-// function add(a,b,c) 
-// {
+// function add(a=1,b=2,c=3){
+    
 //     console.log(a+b+c);
 // }
-// function add(a=1,b=1) 
+// function CBF() {
+//     console.log( "Im call back" );
+// }
+// add(3,6,CBF() )
+
+// function CBF(a,b,c) {
+//     console.log( a+b+c );
+//     console.log( "Im call back" );
+// }
+// function add(acceptCallBack){
+//     acceptCallBack(5,10,20)
+// }
+// add( CBF )
+
+// function add(a=1,b=1)
 // {
 //     console.log(a+b);
 // }
@@ -96,12 +124,12 @@ abc(1, 2)
 // let a = "hi";
 
 // console.log( a );
-// 
+//
 
 ///------Function Overloading-----///
 
 /*In JavaScript, function overloading based on parameter values like you're
-trying to achieve isn't directly supported. When you define multiple functions with the same name 
+trying to achieve isn't directly supported. When you define multiple functions with the same name
 in the same scope, the last defined function will override the previous ones, and only that last function
 will be available. */
 
@@ -113,10 +141,10 @@ so only the following function will be available: */
 //     console.log("Hello");
 // }
 
-/* As a result, when you call add(1, 2) or add(), the only available function add() 
+/* As a result, when you call add(1, 2) or add(), the only available function add()
 will be executed, and you'll see "Hello" printed in the console.
-If you want to achieve function overloading, where different functions are called based 
-on the number or types of arguments, you can use conditional checks within 
+If you want to achieve function overloading, where different functions are called based
+on the number or types of arguments, you can use conditional checks within
 a single function. Here's an example:  */
 
 // function add(a, b) {
@@ -142,10 +170,10 @@ a single function. Here's an example:  */
 // add();     // Outputs: Hello
 // add(1,2,3)
 
-/* In this example, the arguments object is used to determine 
-the number of arguments passed to the add function. Based on the number of arguments, 
-different actions are taken. However, note that using the arguments object 
-is considered somewhat outdated, and modern JavaScript often prefers using rest parameters (...) 
+/* In this example, the arguments object is used to determine
+the number of arguments passed to the add function. Based on the number of arguments,
+different actions are taken. However, note that using the arguments object
+is considered somewhat outdated, and modern JavaScript often prefers using rest parameters (...)
 or default parameter values for function behavior based on different argument patterns. */
 
 //-------------//
@@ -181,7 +209,7 @@ or default parameter values for function behavior based on different argument pa
 
 //DEFAULT PARAMETER
 
-// function  add(a=1,b=1) { 
+// function  add(a=1,b=1) {
 // return( a+b );
 // console.log( a+b );
 // 4+1
@@ -213,7 +241,7 @@ or default parameter values for function behavior based on different argument pa
 // console.log( a );
 
 // const a = [10,29,30];
-// a.push(45,59,60) 
+// a.push(45,59,60)
 // // redeclare and reassign is not possible
 // console.log( a );
 
@@ -244,7 +272,7 @@ or default parameter values for function behavior based on different argument pa
 // let ab = function() {
 //     var b = 5
 
-//     // if (true) { 
+//     // if (true) {
 
 //     //     if (true) {
 //     //         console.log( a );
@@ -254,30 +282,30 @@ or default parameter values for function behavior based on different argument pa
 //     // console.log(a );
 // }
 // ab();
-// console.log( a+b ); 
+// console.log( a+b );
 
 //const is a block scope
 // function ab() {
 //     const a = 10;
-//     if (true) { 
+//     if (true) {
 
-//         console.log( a ); 
+//         console.log( a );
 //     }
 // }
 // ab();
 
-// Global variable && local variable 
+// Global variable && local variable
 
 // const a = 10; //Global variable
 // let b = 20;
 // var c = 30;
 // function ab() {
 //     const a = 20; //Local Variable
-//     let b = 30;  
-//     var c = 40; 
-//     if (true) { 
+//     let b = 30;
+//     var c = 40;
+//     if (true) {
 
-//         console.log( a,b,c ); 
+//         console.log( a,b,c );
 //     }
 // }
 // ab();
@@ -287,31 +315,33 @@ or default parameter values for function behavior based on different argument pa
 
 // var arr = [10,"js",true,undefined,null,[2,3,4],{}];
 //0   1    2      3       4
-//10 "js" true undefined null  
+//10 "js" true undefined null
 
 //console.log( arr.length-1  );
 
 // for (let i = 0; i < arr.length  ; i++) {
-//     console.log( arr[ i ]  );  
+//     console.log( arr[ i ]  );
 // }
 
+//==============Self Invoked Function
 //Immediately Invoked Function Expression(IIFE)--This is a pattern
 
+//syntax 
+//         (function (){
+//        })();
 
+(function () {
+    console.log( "Im IIFE" );
+})()
 // (function abc(a,b){
 //      console.log( "normal function"+(a+b) );
 
 // })(1,3)
-// functionName()
+// abc() ===> it wil throw error
 
 // (function (a,b) {
 //     console.log( "self invoked"  );
 // })();
-
-
-//syntax - 
-//         (function (){
-//        })();
 
 // let a = 10;
 // let b = 20;
@@ -366,9 +396,9 @@ or default parameter values for function behavior based on different argument pa
 //   let b = 20;
 //   const c = 30;
 
-//   for ( index = 0; index < 5; index++) {  
+//   for ( index = 0; index < 5; index++) {
 
-//     console.log( a+b+c ); 
+//     console.log( a+b+c );
 //   }
 // }
 // functionName();
@@ -501,27 +531,27 @@ or default parameter values for function behavior based on different argument pa
 
 
 
-function higherOrderFunction() {
-    // console.log(acceptCallBack);
-    console.log("Im Higher Order");
-}
-let callBackFunction = function () {
-    console.log("Im call back");
-}
+// function higherOrderFunction() {
+//     // console.log(acceptCallBack);
+//     console.log("Im Higher Order");
+// }
+// let callBackFunction = function () {
+//     console.log("Im call back");
+// }
 
-higherOrderFunction(callBackFunction())
+// higherOrderFunction(callBackFunction())
 
-function myDisplayer(something) {
-    console.log(something)
-}
+// function myDisplayer(something) {
+//     console.log(something)
+// }
 
-function myCalculator(num1, num2, myCallback) {
-    let sum = num1 + num2;
-    myCallback(sum);
-    console.log("something fishy")
-}
+// function myCalculator(num1, num2, myCallback) {
+//     let sum = num1 + num2;
+//     myCallback(sum);
+//     console.log("something fishy")
+// }
 
-myCalculator(5, 5, myDisplayer);
+// myCalculator(5, 5, myDisplayer);
 
 
 // var firstName = 10;
@@ -553,7 +583,13 @@ myCalculator(5, 5, myDisplayer);
 
 // IIFE - Immediately Invoked Function Expresseion (Pattern) ====> Self invoked function
 
-(function () {
-    console.log( "Hii" );
-}) ()
+// (function () {
+//     console.log( "Hii" );
+// }) ()
 
+// // console.log( 1==Number("1") );
+
+// console.log( 1 > "a"  );
+// // console.log( typeof ("1" + undefined) );
+
+// console.log( Number("a") );
