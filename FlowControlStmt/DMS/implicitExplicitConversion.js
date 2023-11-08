@@ -14,9 +14,40 @@
 //Explicit Conversion
 
 
-var a = Number("1");
+// var a = Number("1");
 
-console.log( a );
+// console.log( a );
 
 
+//===Redeclare & re-initialization
 
+// var a; //Declaration
+// a=1 // Initialization or assigning
+// var a = 1; //Re-declare
+// a=3; // Re-initialization or Re-assigning
+// var a = 40; // Re-declare
+
+// console.log( a );
+
+//===Assignment Oprator
+
+var num = 1; //Memory==> num =2
+// num++;
+//  var a =  num++ // 1++ => 1
+
+// num = num+15
+// num += 15;
+
+// num++ //num+1
+
+// console.log(a);
+// console.log(num);
+
+//==========Logical Operator
+
+//Logical &&
+
+var a = -1;
+
+console.log( a>=18 && a<=30   );
+console.log( a>=18 || a<=30   );

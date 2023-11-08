@@ -1,28 +1,54 @@
 // var a = 8;
+
 // var b = Boolean(0)
 // console.log(b);
-// // var b = '8'
+// var b = '8'
+// console.log( b + false  );
+// console.log( b + 9  );
 
 // console.log(a - true)
 
-// console.log( a**3  );
+// var b = Number('abc')
+// var b = Boolean(0)
 
-// a = a++ + ++b;
+// console.log( b );
+
+// //====Template String
+
+// var str = "Hi"+
+// b+
+// " Hello"
+
+// var str1 = `H
+// i
+// ${b} 
+// Hello`
+
+// console.log( str, str1 );
+
+// console.log( a**3  );
+// var a = 4, b = 5; 
+// c = a++ + ++b + ++a;  
+
+// console.log( a,b,c );
 
 // console.log( a );
 // console.log( a%3 );
 // console.log( a/2 );
 
+//===Assignment Operator
+// var a = 8;
 // a = a + 5;
-// a+=5  // a=a+5
-// a**=4
 
+// a+=5  // a=a+5
+// // a**=4
+// console.log( a );
 // let a =4;
 // let b = 5;
 
 // console.log( a>b && b>a && a<=b  );
 
-//Logical ooperation 
+//Logical ooperator
 
 //Logical &&
 
@@ -41,7 +67,7 @@
 
 
 //Decision making statement
-// let a =6
+// let a =`6
 // let b = 5;
 
 // if(a<b){
@@ -51,9 +77,9 @@
 //     console.log("a is greater than b");
 // }
 
-//ternary or conditional operator
+// //ternary or conditional operator
 
-// console.log( a>b? "a is greater than b" : "a is less than b"   );
+// console.log( a>b? "a is greater than b" : "a is less than b"   );`
 
 
 // switch (a) {
@@ -350,11 +376,11 @@
 // abc([2,3,5],3); //Function invoke/call
 
 //default argument/paramter
-// function abc(a=3,b=10){
+// function abc(a=10,b=10){
 //     console.log( "Function"+a+b );
 // }  //Function declaration
 // abc(undefined,12); 
-// abc(3,12);
+// abc(4);
 
 //VAR VS LET VS CONST DIFFERENCE
 
@@ -428,7 +454,7 @@
 // name()
 
 //Ananomous Function or Function Expression
-
+// let a = 10
 // let abc = function (a,b) {
 //     console.log( "Ananomous function"+(a+b) );
 // }
@@ -441,22 +467,48 @@
 // }
 // xyz(1,2)
 
-//==========Higher Order Function & Call Back Function
+// //Non return type
+// var NRTDouble =  (a,b)=> console.log( "Arrow function"+(a*b) );
 
-// function HoF(param) {
-//     param(3,4)
+// var NRTSingle =  a => console.log( "Arrow function"+a );
+// NRTDouble(23,46)
+// NRTSingle(45)
+
+// //Return type
+// var normalReturn =  (a,b)=>{
+//     return a+b
+// };
+// var singleParams = a =>a
+// var multiParams =  (a,b)=>a+b
+
+// console.log( normalReturn(4,5)  );
+// console.log( singleParams(1) );  
+// console.log( multiParams(1,2) );  
+
+// //==========Higher Order Function & Call Back Function
+
+// function HoF(acceptCallBack) {
+//     console.log(acceptCallBack);
 //     console.log( "Im a Hod Function" );
 // }
-
-
 // function callBack(a,b){
 //     console.log( "Im a call Back "+ (a+b)  );
 // }  
 
-// HoF( callBack );
+// HoF(34, callBack );
 //HigherOrderFunction(CallBackFunction)
 
+
+//Self Invoked Function
 //====IIFE(Immediately Invoked Function Expression)-->Pattern
+
+// (function (ananom) {
+//     console.log( ananom );
+// })(123);
+
+// ( (arrow) => {
+//     console.log( arrow );
+// })(456);
 
 // ( ()=> {
 //     console.log("Self invoke");
@@ -464,9 +516,25 @@
 
 //======>Array
 
-let arrName = [1, "two", true, [1, 2, 3], { id: 1 }, , 2, , 4, 5, 6, 6, 7, 8, 88]
+// let arrName = [1, "two", true, [1, 2, 3], { id: 1 }, , 2, , 4, 5, 6, 6, 7, 8, 88]
 
-console.log(arrName);
+// console.log(arrName);
 
-console.log( arrName.length );
-console.log( arrName[arrName.length-2]);
+// console.log( arrName.length );
+// console.log( arrName[arrName.length-2]);
+
+async function name() {
+    let data =await "Helooe"
+     console.log(data); 
+}0
+name()
+console.log( "Good Evening" );
+
+// const getData = async () => {
+//     let y = await "Hello World";
+//     console.log(y);
+// }
+ 
+// console.log(1);
+// getData();
+// console.log(2);

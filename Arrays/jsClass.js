@@ -24,22 +24,22 @@
 // person.fName.apply(person1,[25,55])
 
 
-class FirstClass {
-  #newBrand;
-  #model;
-  constructor(brand, model) {
-    this.#newBrand = brand;
-    this.#model = model;
-  } 
- add(){
-    console.log( this.#newBrand+this.#model );
-  }
-}
-let firstObject = new FirstClass("bMW", 2010);
+// class FirstClass {
+//   #newBrand;
+//   #model;
+//   constructor(brand, model) {
+//     this.#newBrand = brand;
+//     this.#model = model;
+//   } 
+//  add(){
+//     console.log( this.#newBrand+this.#model );
+//   }
+// }
+// let firstObject = new FirstClass("bMW", 2010);
 // let secondObject = new FirstClass("bMW", 2014);
 
 // console.log(firstObject.newBrand);
-firstObject.add()
+// firstObject.add()
 
 // firstObject.add()
 // secondObject.add()
@@ -57,5 +57,6 @@ firstObject.add()
 // catchValues();
 // window.log(variable1);
 // window.log(variable2); 
+
 
 

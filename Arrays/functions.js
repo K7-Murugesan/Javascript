@@ -330,9 +330,9 @@ or default parameter values for function behavior based on different argument pa
 //         (function (){
 //        })();
 
-(function () {
-    console.log( "Im IIFE" );
-})()
+// (function () {
+//     console.log( "Im IIFE" );
+// })()
 // (function abc(a,b){
 //      console.log( "normal function"+(a+b) );
 
@@ -593,3 +593,173 @@ or default parameter values for function behavior based on different argument pa
 // // console.log( typeof ("1" + undefined) );
 
 // console.log( Number("a") );
+
+
+
+//==========Declaration & Initialization
+
+// var ThisIsMyNewId = 1;
+
+// var ThisIsMyNewId; //Declaratin
+
+// ThisIsMyNewId = 1; //Initialization or assigning
+
+//Dynamically or Loosely or Weakly Typed Language 
+
+// ThisIsMyNewId = "one"; // Re-initialization or Re-assigning
+
+// ThisIsMyNewId = true;
+
+// ThisIsMyNewId = undefined;
+
+// ThisIsMyNewId = [1,2,3,4]
+
+
+// console.log( ThisIsMyNewId );
+
+// var ThisIsMyNewId = 33;  //Re-declaration
+
+// console.log( ThisIsMyNewId  );
+
+
+// console.log( 1 + true   );
+
+// console.log( 1 + "1" );
+
+// console.log(typeof (1 + undefined ));
+
+// console.log( 1 + null );
+
+// console.log( 1 === "1"  );
+
+// var boolean = Boolean( Infinity );
+
+// console.log( boolean );
+
+
+// var arr = [ 1, "one", true, undefined, "five", 1001,
+//  [50,60,70], { id:1, fName:"Js"  }  ]
+
+//  console.log( arr[7].fName );
+
+ //=====Concatination
+
+//  var str = "Hi"
+//  var str1 = `FSD 2023 Total Count`
+//  var str2 = "FSD 2023 Total Count"
+//  var count = 16
+
+//  console.log( str1  );
+//  console.log( str2 );
+
+//  console.log( str + 
+//     "..." + 
+//     str1 + 
+//     "-" + 
+//     count );
+
+//  //======Template String/ Template Literal
+
+// // Syntax --->   ` String ${ variable } `
+
+// console.log( `${str}...${str1}-${count}`  );
+
+// var num = 5;
+// console.log( num+"X"+1+"="+(num*1) );
+
+
+// var str1 = "Hello"
+// var str2 = `H
+// e
+// l
+// l
+// o`
+// var num = 10
+// console.log( `Aug
+// ular 
+// ${num}` );
+// console.log( "Angular"+
+// num );
+
+// console.log(  10!==10 );
+// console.log(  10!==20 );
+// console.log(  10!=="20" );
+// console.log(  "20"!=="20" );
+// console.log( !( 10!=="q") );
+
+
+///Flow Control Statement
+    //to control the execution flow of the statement
+
+/* 2 types
+Decision Making Statement --- Based on the condition i can execute the statement
+Looping Statement-- Used to print a statement for multiple times */
+
+//DCM - if, if else, if else-if else, Switch
+
+//if statement - executes statement only if the condtion is true
+
+//Syntax
+        /* 
+            if(condition){
+              statement
+            }
+        */
+
+// var a = 1;
+
+// if (a>5) {
+//    console.log( a+" is greater number" ); 
+// }
+
+// var age = 17;
+// //Write a condition--- age is greater than 18 and less than 30
+// if (age>=18 && age<=30) {
+//     console.log( "Eligible" );
+// }
+
+//if else statement
+/*Syntax
+        if(condition){
+            statement
+        }
+        else{
+            statement
+        }
+*/
+
+var age = 17;
+
+if (age>=18 && age<=30) {
+    console.log( "Eligible" );
+}
+else{
+    console.log( "Not eligible" );
+}
+
+//======= If else-if else statement
+/*Syntax
+        if(condition){
+            statement
+        }
+        else if(condition){
+            statement
+        }
+        else{
+            statement
+        }
+*/
+var input1 = 10;
+var input2 = 15;
+
+if(input1>input2){
+    console.log( `${input1} is greater than ${input2}` );
+}
+else if(input2>input1){
+    console.log( `${input2} is greater than ${input1}` );
+}
+else{
+    console.log( `Both are equal` );
+}
+
+
