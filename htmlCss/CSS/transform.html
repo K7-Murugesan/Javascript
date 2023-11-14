@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        section{
+            width: 90vw;
+            height: 70vh;
+            border: solid black 1px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #bottom-box{
+            width: 90vw;
+            height: 20vh;
+            border: solid black 1px;
+            margin: auto;
+        }
+        #bottom-box input{
+            width: 100px;
+            height: 40px;
+        }
+        #bottom-box button{
+            width: 100px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+    </section>
+
+    <div id="bottom-box">
+        <input type="number" step="1" id="wd" placeholder="width"> 
+        <input type="number" step="1" id="hg" placeholder="height">
+        <button onclick="createsquare()">Square</button>
+        <button onclick="convertToCircle()">Circle</button>
+        <br><br>
+
+        <button onclick="changeColor('red')">Red</button>
+        <button onclick="changeColor('gold')">Gold</button>
+        <button onclick="changeColor('blue')">Blue</button>
+        <button onclick="changeColor('green')">green</button>
+    </div>
+
+    <script>
+
+        function changeColor(colorName) 
+        {
+            let div =  document.querySelector("section").firstElementChild;
+            div.style.backgroundColor = colorName;
+        }
+    
+
+        function createsquare()
+        {
+            if( document.querySelector("section").firstElementChild == null )
+            {
+                var div = document.createElement("div");
+                div.style.width =  document.getElementById("wd").value + "px";
+                div.style.height = document.getElementById("hg").value + "px";
+                div.style.backgroundColor = "black";
+
+                var section = document.querySelector("section");
+                section.append(div);
+            }
+
+            else if(document.querySelector("section").firstElementChild != null)
+            {
+                var div = document.querySelector("section").firstElementChild;
+                var divWidth = div.style.width;
+                var divheight = div.style.height;
+                divWidth = divWidth.substring(0, divWidth.length - 2);
+                divheight = divheight.substring(0, divheight.length - 2);
+
+                var currentWidth = document.getElementById("wd").value;
+                var currentHeight = document.getElementById("hg").value;
+
+                if(divWidth!=currentWidth || divheight!=currentHeight)
+                {
+                    div.style.height = currentHeight +"px";
+                    div.style.width = currentWidth + "px";
+                    alert("box updated");
+                }
+                else
+                {
+                    alert("box already created");
+                }
+            }
+
+            else if(document.querySelector("section").firstElementChild!=null 
+                    && 
+                    document.querySelector("section").firstElementChild.style.borderRadius=="50%")
+            {
+                document.querySelector("section").firstElementChild.style.borderRadius = "0%";
+            }
+            
+        }
+    
+        function convertToCircle()
+        {
+            var div = document.querySelector("section").firstElementChild;
+            div.style.borderRadius = "50%";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+
+/* Child selector >   */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body a{
+    text-decoration: none;
+}
+
+
+div>h4 {
+    color: blueviolet;
+    font-size: 50px;
+}
+
+div>h1 {
+    color: black;
+}
+
+div>h2 {
+    color: brown;
+}
+/* div>h3 {
+    color: rgb(90, 205, 138);
+    font-size: 60px;
+} */
+/* Adjacent sibling selector >   */
+.grid-prop+h2 {
+    color: rgb(102, 255, 71);
+    font-size: 40px;
+    background-color: #ffc107;
+    height: 300px;
+    width: 300px;
+}
+/* div+h5 {
+    color: rgb(102, 255, 71);
+    font-size: 40px;
+} */
+/* Sibling selector >   */
+
+h2~.padding{
+background-color: #ffc107;
+}
+
+/* div+h2{
+    color: #000;
+} */
+
+/* descendent selector >   */
+div h5 {
+    font-size: 50px;
+    color: aqua;
+    background-color: blue;
+}
+
+div h3 {
+    color: rgb(205, 90, 138);
+    font-size: 60px;
+}
+/* pseudo classes    */
+
+h3:active{
+    color: aliceblue;
+    background-color: brown;
+}
+h1:hover{
+    color:red ;
+    background-color: black;
+}
+button{
+    font-size: 50px;
+}
+button:focus{
+    color: green;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 30px;
+}
+a:visited{
+    color: purple;
+}
+/* ul li:first-child{
+    font-size: 30px;
+    background-color: aqua;
+} */
+/* Style the first item in the navigation menu */
+/* .nav-menu li:first-child {
+    background-color: #ffc107;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 60px;
+  } */
+  .nav-menu li:last-child {
+    background-color: #ffc107;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 60px;
+  }
+
+
+/* --------------------------------------------------------------- */
+
+/* pseudo element    */
+
+p::after{
+    content: "123456789009875";
+}
+p::before{
+    content: "123456789009875";
+}
+p::selection{
+    color: brown;
+    background-color: blueviolet;
+}
+p::first-letter{
+    font-size: 100px;
+}
+h1::first-letter{
+    font-size: 100px;
+}
+p::first-line{
+    word-spacing: 20px;
+    color: aqua;
+    background: #000;
+    /* background-color: blueviolet; */
+}
+::marker{
+    color: #2d2d2d;
+}
+
+/* li{
+    display: inline-block;
+    height: 100px;
+    margin-left: 50px;
+    padding-top: 20px;
+   width: 250px;   
+} */
+img{
+    display: block;
+    
+}
+.image1:hover{
+    height: 400px;
+    width: 400px;
+}
+.padding{
+    display: flex ;
+    
+}
+.flex-prop{
+    display: flex ;
+    background-color: rgb(244, 127, 255);
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.grid-prop{
+    height: 500px;
+    display: grid ;
+    gap: 100px;
+    
+    align-content: center;
+    justify-items: center;
+    
+}
+
+
+h2,h3,h4,h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#html{
+    text-transform: lowercase;
+}
+
+.grid-prop{
+    background-color: #ffc107;
+    margin: 10px;
+}
+
+div img{
+    height: 300px;
+}
+
+div>img{
+    width: 400px;
+}
+div>a{
+    height: 100px;
+    width: 200px;
+    background-color: black;
+}
+div>h1{ 
+    background-color: blue;
+}
+span{
+    height: 1000px;
+}
+.flex-prop:hover{
+    background-color: chartreuse;
+    color: #000;
+}
+
+.flex-prop h5:hover{
+    color: black;
+    background-color: #ffc107;
+}
+.flex-prop h5:active{
+    color: rgb(177, 36, 36);
+    background-color: #d4d3d0;
+}
+
+
+
+
+
+

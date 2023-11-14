@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+
+<body bgcolor="skyblue" text="black">
+    <form action="table.html" target="_blank">
+        <fieldset>
+            <LEGEnd align="center">JOB APPLICATION</LEGEnd>
+
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" id="name">
+            <br><br>
+
+            <label for="email">Email ID:</label>
+            <input type="email" placeholder="Enter your mail" id="email">
+            <br><br>
+
+            <label for="phone">Contact:</label>
+            <input type="tel" value="+91" id="phone" maxlength="13">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter password" id="password" minlength="6" maxlength="15">
+
+            <label for="dob">Date of Birth</label>
+            <input type="datetime-local" id="dob"><br><br>
+
+            <label for="skills">Skills</label>
+            <input type="range" id="skills">
+
+            <fieldset>
+                <legend align="center">Your Gender</legend>
+                <input type="radio" name="gender">Male <br><br>
+                <input type="radio" name="gender">Female <br><br>
+                <input type="radio" name="gender">TransGender <br><br>
+            </fieldset> <br><br>
+
+            <fieldset>
+                <legend align="center">Your Subjects</legend>
+                <input type="checkbox">HTML <br><br>
+                <input type="checkbox">CSS <br><br>
+                <input type="checkbox">JAVASCRIPT <br><br>
+                <input type="checkbox">REACTJS<br><br>
+                <input type="checkbox">NODEJS<br><br>
+                <input type="checkbox">EXPRESSJS<br><br>
+                <input type="checkbox">MONGO DB<br><br>
+            </fieldset> <br><br>
+
+            <label for="resume">Upload your Resume</label>
+            <input type="file" id="resume"> <br><br>
+
+            <fieldset>
+                <legend align="center">Upload your photo</legend>
+                <input type="file" id="photo">
+            </fieldset> <br><br>
+
+
+            <fieldset>
+                <legend>OR</legend>
+            </fieldset>
+
+            <input type="submit">
+            <input type="reset"> <br><br>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

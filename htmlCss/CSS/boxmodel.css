@@ -1,0 +1,79 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: linear-gradient( green,red,orange,skyblue,gray );
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */background-image: linear-gradient( to bottom, red,green, orange); 
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-attachment: fixed;
+
+
+}
+.box {
+   
+   
+    max-width: 800px;
+    height: 200px;
+    padding-top: 50px;
+    border: 2px solid black;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    /* border-radius: 100%; */
+  }
+  
+  /* Using box-sizing: border-box */
+  .border-box {
+    
+    width: 200px;
+    height: 100px;padding-top: 100px;
+   text-align: center;
+    border: 2px solid black;
+    margin: auto;
+  }
+
+/* {
+    margin-top: 250px;
+    margin-left: 450px;
+    margin-right: 450px;
+
+    border: 10px red dotted;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 100px;
+
+    padding-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    outline: 10px green double;
+    outline-offset: 100px;
+    
+    
+} */
+
+/* h1{
+    border: 10px dotted red;
+    
+    border-width: 10px ;
+    border-color:  red green orange rgb(100, 200, 1)  ;
+    border-top-style: dashed;
+    border-left-style: double;
+    border-right-style: solid;
+    border-bottom-style: dashed;
+    padding: 50px;
+    outline: 30px purple dotted;
+    outline-offset: 50px;
+    margin: auto;
+    width: 500px;
+    
+    
+} */

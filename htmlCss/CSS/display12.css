@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+h1 {
+   
+    margin-top: 40px;
+    width: 400px;
+    background-color: gray;
+}
+
+a {
+    display: block;
+    width: 100px;
+    height: 200px;
+    background-color: aquamarine;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+a:visited {
+    color: #2cf312;
+}
+
+section {
+    background-color: #2cf312;
+    display: grid;
+    gap: 30px;
+    /* position: absolute;
+    top: 10px; */
+    /* grid-template-rows: 400px 100px 50px   ; */
+    float: right;
+}
+
+section div {
+    background-color: aqua;
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* .second-div{
+    position: absolute;
+    top: 500px;
+    background-color: black;
+    height: 100px;
+} */

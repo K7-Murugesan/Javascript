@@ -1,0 +1,31 @@
+.para1{
+    background-color: aquamarine;
+   
+}
+.para2{
+    background-color: rgb(201, 118, 24); 
+}
+.para3{
+    background-color: rgb(238, 220, 121);   
+}
+.container{
+    display: flex;
+}
+@media (max-width:600px) {
+    body{
+        background-color: black;
+    }
+   .container{
+    display: grid;
+   }
+   img{
+    width: 100%;
+   }
+   .container2{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   p{
+    width: 200px;
+   }
+}

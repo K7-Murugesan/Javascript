@@ -1,0 +1,40 @@
+.parent{
+    height: 500px;
+    width: 1000px;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content:space-between
+}
+.parent:hover{
+    background-color: yellow;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin-bottom: 400px;
+}
+.box1:hover{
+    border-radius: 100%;
+    background-color: pink;
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(0, 0, 0);
+}
+.box2:hover{
+    border-radius: 100%;
+    background-color: gray;
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.267);
+    margin-top: 400px;
+}
+.box3:hover{
+    border-radius: 100%;
+    background-color: rgba(128, 0, 128, 0.562);
+}

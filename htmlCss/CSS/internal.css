@@ -1,0 +1,62 @@
+body{
+    background: url("./universe.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    margin: auto;    
+    color: blueviolet;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: oblique;
+    text-align: center;
+    text-transform: capitalize;
+    /* text-indent: 50px ; */
+    text-shadow: 10px 5px 10px white;
+    background-color: rgba(222, 146, 32);
+    opacity: 0.5;
+    border-collapse: collapse;
+
+    /*Border property */
+    border: 1px solid white;
+    /* border-bottom: 10px solid white  ;
+    border-top: 10px solid white  ;
+    border-left: 10px solid white  ;
+    border-right: 10px solid white  ; */
+    border-radius: 100px 50px 20px 50px ;
+    /* border-top-right-radius: 50px ; */
+    /* border-width: 10px;
+    border-color: aliceblue;
+    border-style: solid; */
+
+    /* padding property */
+    padding: 30px;
+
+     /* outline & offset property */
+    /* outline: 5px dotted rgb(189, 21, 21) ;
+    outline-offset: 20px; */
+
+    /* Margin Property */
+    margin: 100px ;
+    /* margin-top: 200px ;
+    margin-bottom: 200px;
+    margin-left: 50px;
+    margin-right: 100px; */
+}
+p{
+    color: aliceblue;
+    margin: 20px;
+} 
+div{
+    background-color: aliceblue;
+    padding: 50px;
+    text-align: center;
+}
+span{
+    display: block;
+}
+li{
+    display: inline;
+}      

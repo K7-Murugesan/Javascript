@@ -1,0 +1,76 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Inter+Tight:ital,wght@0,200;1,100&family=Noto+Sans+Vithkuqi:wght@500&family=Noto+Serif&family=Playfair+Display&family=Roboto&family=Roboto+Slab:wght@200&family=Rubik+Dirt&display=swap'); */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alumni Sans Inline One', cursive;
+}
+
+.main1 {
+    color: aqua;
+}
+
+#main3>ul>li{
+
+}
+
+#main3 {
+    color: blueviolet;
+}
+
+p {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+}
+
+p::first-letter {
+    font-size: 50px;
+    color: brown;
+    /* margin: 0 30px; */
+}
+
+p::first-line {
+    color: cadetblue;
+}
+
+p::before {
+    content: "******";
+    margin: 0 30px;
+}
+
+p::after {
+    content: "******";
+    font-size: 40px;
+    color: blue;
+}
+
+p::selection {
+    color: blue;
+    background-color: white;
+}
+
+ul {
+    margin-left: 200px;
+}
+
+li::marker {
+    color: aqua;
+
+}
+button:active{
+    color: wheat;
+    background-color:  black ;
+}
+h6::selection{
+    color: wheat;
+    background-color:  black ;
+}
+button:focus{
+    color: red;
+    background-color:  yellow ;
+}

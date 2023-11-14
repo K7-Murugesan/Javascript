@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+        text-align: center;
+        background-color: blueviolet;
+        color: antiquewhite;
+        }
+        h1::selection{
+            background-color: brown;
+            color: bisque;
+        }
+        h2::after{
+            content: "@" ;
+            color: crimson;
+        }
+        h3::before{
+            content: "**";
+            color: red;
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: violet;
+        }
+        #pizza::first-line{
+            color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>The Light is Bright</h1>
+    <h2>The Sun is Hot</h2>
+    <h3>Idly is Soft</h3>
+       
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quam temporibus nihil quis neque.
+    Quam vero excepturi impedit soluta ipsa illum magnam quas et. Deserunt explicabo consectetur laborum eaque harum.</p>
+    <p id="pizza">
+         Pizza (Italian: [ˈpittsa], Neapolitan: [ˈpittsə]) is a dish of Italian origin consisting of a usually round,<br>
+        flat base of leavened wheat-based dough topped with tomatoes,<br>
+       cheese, and often various other ingredients (such as anchovies, mushrooms,<br>
+       onions, olives, vegetables, meat, ham, etc.), which is then baked at a high <br>
+       temperature, traditionally in a wood-fired oven.
+    </p>
+    <div>
+    <p>
+    In Italy, pizza served in a restaurant is presented unsliced,<br> 
+       and is eaten with the use of a knife and fork.[2][3] In casual<br>
+      settings, however, it is cut into wedges to be eaten while held in the hand.
+    </p>
+    </div>
+    </body>
+</html>

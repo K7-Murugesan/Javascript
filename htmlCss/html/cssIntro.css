@@ -1,0 +1,13 @@
+body{
+    background-image: url(./images/foods/7up.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+
+h1{
+    color: aqua;
+    background-color: black;
+}
