@@ -52,7 +52,7 @@
 
 //=============================================
 
- /// Shorthand Assigned Property
+/// Shorthand Assigned Property
 // let id = 1
 // let fName = "Kesavan"
 // let lName = "murugesan"
@@ -83,22 +83,22 @@
 
 //Function call,apply,bind
 
-let callObj = {
-     fName : "Bajaj",
-     lName : "Pulsar"
-}
+// let callObj = {
+//      fName : "Bajaj",
+//      lName : "Pulsar"
+// }
 
 
-let obj = {
-     // fName : "Hero Honda",
-     // lName : "H2",
-     // newFunction : function(a,b){
-     //      console.log(( "HIi"+(a+b)+this.fName ));
-     // },
-     // duplicate: function(){
-     //      this.newFunction(4,5)
-     // }
-}
+// let obj = {
+// fName : "Hero Honda",
+// lName : "H2",
+// newFunction : function(a,b){
+//      console.log(( "HIi"+(a+b)+this.fName ));
+// },
+// duplicate: function(){
+//      this.newFunction(4,5)
+// }
+// }
 // console.log( obj.fName );
 
 // let newVar = obj.newFunction.call(callObj,10,20)
@@ -374,14 +374,20 @@ let obj = {
 // console.log( Boolean(null) );
 // console.log( typeof([]) );
 
-// let obj1 = {
-//     lastName: "Interpreter"
-// }
-// let obj = {
-//     firstName: function(a,b,c){
-//         return( this.lastName + (a+b+c) );
-//     }
-// }
+let obj1 = {
+    lastName: "Interpreter"
+}
+
+let obj = {
+     lastName: "scripting",
+    firstName: function(){
+        return( this.lastName );
+    }
+}
+// let newobj = obj.firstName.call(obj1)
+let newobj = obj.firstName
+
+console.log( newobj() );
 // obj.firstName.call(obj1,2,4,4)
 // obj.firstName.apply(obj1,[2,4,4])
 
@@ -401,7 +407,7 @@ let obj = {
 // console.log( keyArray );
 
 // const person2 = {
-        
+
 //         fName: function (first, second) {
 //             return(this.name + this.age + first + second);
 //         }
@@ -422,12 +428,12 @@ let obj = {
 //       return this.firstName + " " + this.lastName;
 //     }
 //   }
-  
+
 //   const member = {
 //     firstName:"Hege",
 //     lastName: "Nilsen",
 //   }
-  
+
 //   let fullName = person.fullName.bind(member);
 
 //   console.log( fullName() );
@@ -515,4 +521,37 @@ let obj = {
 
 // console.log( 10-"5" );
 // console.log( "Ay"=="Ar" );
+
+// function* myName(){
+//      yield 'i am string'
+//      yield 'hiiiii'
+// }
+// console.log(myName().return());
+
+// var x = 23;
+
+// (function () {
+//      var x = 43;
+//      (function random() {
+//           x++;
+//           console.log(x);
+//           var x = 21;
+//      })();
+//      console.log(x);
+// })();
+
+
+// let hero = {
+//      powerLevel: 99,
+//      getPower() {
+//           return this.powerLevel;
+//      }
+// }
+
+// let getPower = hero.getPower;
+
+// let hero2 = { powerLevel: 42 } ;
+// console.log(getPower());
+// console.log(getPower.apply(hero2));
+
 

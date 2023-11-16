@@ -1,0 +1,41 @@
+h3{
+    color: brown;
+    background-color: rgba(228, 219, 149, 0.938);
+}
+
+h1{
+    background-image: url('../html/images/Photography/arch1.jpg');
+    color: aliceblue;
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-style: inherit;
+    font-stretch: ultra-expanded;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px red   ;
+    text-indent: 100px;
+    overflow: scroll;
+    box-shadow: 10px 10px 20px rgb(0, 255, 13) ;
+
+}
+h2{
+    color: rgb(239, 235, 243);
+    background-color: rgb(237, 18, 18);
+    height: 200px;
+    text-align: center ;
+    opacity: 0.5;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+body{
+    background: url('../html/images/Healthyfood/veg3.jpg');
+    /* background-image: url('../html/images/Photography/arch1.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+}
+table{
+    border-collapse: collapse;
+}
