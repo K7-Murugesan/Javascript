@@ -523,12 +523,12 @@
 // console.log( arrName.length );
 // console.log( arrName[arrName.length-2]);
 
-async function name() {
-    let data =await "Helooe"
-     console.log(data); 
-}0
-name()
-console.log( "Good Evening" );
+// async function name() {
+//     let data =await "Helooe"
+//      console.log(data); 
+// }0
+// name()
+// console.log( "Good Evening" );
 
 // const getData = async () => {
 //     let y = await "Hello World";
@@ -538,3 +538,49 @@ console.log( "Good Evening" );
 // console.log(1);
 // getData();
 // console.log(2);
+
+// let date = new Date();
+
+// setInterval(()=>{
+//     console.log( date.getTime()  );
+// },2000)
+
+// let str = "one"
+
+// console.log( str + true );
+// console.log( 10 + false );
+
+// console.log( 10 - 'A' );
+
+// console.log(  Boolean( -Infinity )  );
+// let num = 10
+
+// let StringLiteral = "Now we are learning Literal"
+// +num;
+//camelCase
+//PascalCase 
+//under_case or snake_case
+
+// let str1 = `Now we are 
+// learning Literal
+// ${num}`;
+
+// console.log( str );
+// console.log( str1 );
+
+//datatypes defines how data stored in variable
+
+
+let a = 10;
+let b = a;
+
+a= 5
+
+console.log( a,b );
+
+let arr = [ 1,2,3,4,5 ];
+let arr2 = arr;
+
+arr.push(6)
+
+console.log( arr, arr2 );

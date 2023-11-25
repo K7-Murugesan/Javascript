@@ -1,44 +1,44 @@
-// var a=[10,"FSD Batch",true,undefined,null,[5,6,7],{ batch:"2FE" }]
+var a=[10,"FSD Batch",true,undefined,null,[5,6,7],{ batch:"2FE" }]
 
-// var b = a;
+var b = a;
 
-// var d =[...a]
+var d =[...a]
 
-// var e = a.concat()
-// console.log(e);
+var e = a.concat()
+console.log(e);
 
-// var f = a.slice(3);
-// console.log( f );
-// console.log(a[a.length-1]);
+var f = a.slice(3);
+console.log( f );
+console.log(a[a.length-1]);
 
-// for (let index = 0; index < a.length; index++) {
-//     console.log( a[index] );
+for (let index = 0; index < a.length; index++) {
+    console.log( a[index] );
     
-// }
-// console.log(a[3]);
-// console.log(a[a.length-1]);
-// console.log(a[a.length-2][0]);
-// var b = 10;
-// b=20;
+}
+console.log(a[3]);
+console.log(a[a.length-1]);
+console.log(a[a.length-2][0]);
+var b = 10;
+b=20;
 
-// a[0]=20;
-// a[a.length]= "Angular";
+a[0]=20;
+a[a.length]= "Angular";
 
-// console.log( a );
+console.log( a );
 
-// let myName = "Shankar";
-// let place = "Chennai";
+let myName = "Shankar";
+let place = "Chennai";
 
 
-// console.log( "My name is " + myName + " im from" +" "+ place );
+console.log( "My name is " + myName + " im from" +" "+ place );
 
-// // Syntax : `String ${variable_name}`
+// Syntax : `String ${variable_name}`
 
-// console.log( `My name is ${myName} im from ${place}  `  ); // Template Literal - Back Tick
+console.log( `My name is ${myName} im from ${place}  `  ); // Template Literal - Back Tick
 
 
 // let a = [1,2,3,4,5,6]
-// // let b = a.length//b=6
+// let b = a.length//b=6
 // a[7] = 10;//a[6]=10
 
 // console.log( a );

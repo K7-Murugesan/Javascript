@@ -1,0 +1,34 @@
+.para1{
+    position: relative;
+    top: 500px;
+}
+
+
+.main{
+    background-color: greenyellow;
+    width: 500px;
+    height: 300px;
+    position: relative;
+   position: sticky;
+   top: 0;
+}
+.main .box1{
+    background-color: rgb(238, 130, 130);
+    margin: 20px;
+    position: fixed;
+}
+.main .box2{
+    background-color: rgb(6, 87, 7);
+    margin: 20px;
+    position: relative;
+   top: 100px;
+}
+.main .box3{
+    background-color: rgb(153, 130, 238);
+    margin: 20px;
+    position: absolute;
+    top: 20px;
+    left: 500px;
+    
+    
+}
