@@ -291,7 +291,6 @@ var num1 = 25
 // console.log( num>=18 && num<=30  );
 // console.log( num>=18 && num1<=30  );
 
-
 //-- Logical OR ( || )
 console.log( num>=18 || num1<=30  );
 
