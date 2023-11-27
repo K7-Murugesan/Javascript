@@ -278,5 +278,24 @@ var a = 10;
 // console.log( 9 <= 9 );  // Less than equal to
 // console.log( 10!='20' ); // Not Equal to
 // console.log( 10!=='20' ); // Identical not equal or strict not equal
-console.log( 10 !==20 );
-console.log( 10!=='20' );
+// console.log( 10 !==20 );
+// console.log( 10!=='20' );
+
+//-- Logical Operator
+
+//--- Logical AND (&&)
+
+var num = 17;
+var num1 = 25
+
+// console.log( num>=18 && num<=30  );
+// console.log( num>=18 && num1<=30  );
+
+
+//-- Logical OR ( || )
+console.log( num>=18 || num1<=30  );
+
+//----Logical NOT ( ! )
+console.log( !(num>=18 || num1<=30)  ); 
+
+console.log( !(num<20) );
