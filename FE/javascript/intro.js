@@ -145,12 +145,12 @@
 
 // console.log( condition + num );
 //     // number + boolean-->(number) = number (or) boolean+number = number
-    
+
 // console.log( condition1+condition ); 
-    // Boolean + Boolean = number
+// Boolean + Boolean = number
 
 // console.log( num1 - undefinedVar  );
-    // number + undefined = Nan
+// number + undefined = Nan
 // console.log( typeof(num1 + undefinedVar)  );
 
 // console.log( str1 + null );
@@ -179,7 +179,7 @@
 // console.log( String( newBoolean ) );
 // console.log(  newBoolean -  false  );
 
-let id = 12,newId=id-5, str 
+// let id = 12,newId=id-5, str 
 // // let newId = id;
 //   newId = id - 10;
 
@@ -205,15 +205,78 @@ let id = 12,newId=id-5, str
 // language`
 
 
-let strLiteral = "Javascript is a scripting language and Programming language " 
-+ id + " "
-+ newId;  // 
+// let strLiteral = "Javascript is a scripting language and Programming language " 
+// + id + " "
+// + newId;  // 
 
-let tempStr = `Javascript is a scripting language and Programming language + ${id+newId} +${newId}` 
-    //String Interpolation --- ${}
+// let tempStr = `Javascript is a scripting language and Programming language + ${id+newId} +${newId}` 
+//     //String Interpolation --- ${}
 
 
-console.log( strLiteral );
-console.log( "=========================");
-console.log( tempStr );
+// console.log( strLiteral );
+// console.log( "=========================");
+// console.log( tempStr );
 
+////=========Operator 
+
+//==Arithmetic Operator
+
+// var num = 50;
+// var num1 = 10;
+
+
+// console.log( num+num1 );
+// console.log( num-num1 );
+// console.log( num*num1 );
+// console.log( num%num1 ); //Modulus---Remainder
+// console.log( num/num1 ); //---Quotient
+// console.log( num**num1 ); //Exponential --power
+
+//Incerement and Decrement operator
+
+//Pre increment & Post-increment
+
+// var a = 1;
+// ++a //---Pre-increment
+// var b = 2;
+// var c = 3;
+// a = ++a + b++;//--a = a+1 //--Post-increment
+// c = ++a + ++b + c++ + a++;
+// //a = 1 + 1
+// // a = 2
+// console.log( a, b, c );
+
+/* a = c++ - --a + ++c + b++
+    b = a-- + --b + ++a
+    c = c-- + b-- - --a;
+    console.log( a,b,c )
+*/
+
+// var a = 4; // in memory 3
+// var b = 2;
+
+// b = --a + b--;
+// // b = --4 + 2--
+// //   = 3 + 2
+// // b = 5
+// console.log( a,b );
+
+//=====Assingment Operator
+
+var a = 10;
+
+// a += 50 // a = a+50
+// console.log ( a );
+
+//-----Comparision Operator
+
+// console.log( a == '10' );//Equal to -it will Compare values
+// console.log( a === '10' ); //Strict Equal or identical equal - it will compare value & datatype
+// console.log( 10 > a  ); // Greater than
+// console.log( 20 >= a ); // Greater than equal to
+// console.log( 15 < 9 ); // Less than
+// console.log( 9 <= 9 );  // Less than equal to
+// console.log( 10!='20' ); // Not Equal to
+// console.log( 10!=='20' ); // Identical not equal or strict not equal
+console.log( 10 !==20 );
+console.log( 10!=='20' );
