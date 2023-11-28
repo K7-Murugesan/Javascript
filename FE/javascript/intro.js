@@ -21,17 +21,33 @@
 
 // console.log( str );
 // console.log( typeof str );
+ 
+// var myNewEmployeeId = 1; // camelCase
+// var MyNewEmployeeId = 2; //PascalCase
+// var my_new_employee_id = 3 ; //under_case (or) snake_case
 
-// // - single line comment
-// /* Multi line comment  */  
 
+ // - single line comment
+ /* Multi line comment  */  
+
+
+// var a = 10
+// var a = "Good to c u " 
+// var a = true
+// var a // declaration
+// a = {id:1} // Initialization
+// var a = null // re-declaration/ redefine // Re-initialization 0or re-assign
+
+// console.log( a );
 // var condition = true ;
 // var condition = false ;
-
-// console.log( condition );
+// console.log( typeof (condition + "hii") );
+// // console.log( condition );
 // console.log( typeof(condition) );
 
-// var obj = undefined;
+// var obj;
+
+// console.log( obj );
 
 // console.log( obj );
 
@@ -51,15 +67,15 @@
 //     }
 //  */
 
-// let secodObj = {
-//     str : "firstValue",
-//     num : 15,
-//     condition : true,
-//     // fourthObj,
-//     newNull : null
+// let newObj =  {
+//     num: 1,
+//     str:"two",
+//     con : true,
+//     undefVar : undefined,
+//     nullVal : null
 // }
 
-// console.log( secodObj );
+// console.log( newObj.num );
 
 // //Syntax - Array
 //  /*
@@ -69,8 +85,9 @@
 //  */
 
 
-// let arr = [123,"two",true,undefined,null, {name:"dinesh"}, [1,2,3,4]  ] 
+// let newArr = [1,"two", false, undefined, null, [1,2,3,45], {id:1, name:"js"}   ]
 
+// console.log( newArr[newArr.length-1] );
 
 
 // //-------difference between undefined & (not-defined or undeclared)
@@ -78,11 +95,23 @@
 
 // console.log( myId );  // output - undefined
 
-// // console.log( firstArrValue ); // Error- firstArrValue is not defined
+// console.log( firstArrValue ); // Error- firstArrValue is not defined
 
 
 
 //25-11-2023
+
+// let a = 10; 
+// a = 20;
+
+let a; // Declaration
+a=10; // Initialization
+a="ECMA" // Re-initialization
+// let a = 30; //Redeclare is not possible
+
+const b = 10;
+
+
 
 // let currentTopic; //Declaration
 
@@ -110,8 +139,14 @@
 
 
 // {
-//     var fNmae = "Mocha" //global or function scope
+//     const fname = "Brendan Eich"
+//     {
+       
+//         console.log( fname );
+//     }
+//     console.log( fname );
 // }
+
 
 // console.log( fNmae );
 
@@ -129,6 +164,21 @@
 
 
 //========= Type Coercion or Implicit Conversion
+// var num = 10;
+// var str = "Twenty"
+
+// console.log( typeof(num+str) );
+// console.log( str + true );
+// console.log( str + undefined );
+// console.log( str + null );
+// console.log( num + false );
+// console.log( num + str );
+// console.log( num - str );
+// console.log( num - false );
+// console.log( num / null );
+// console.log( typeof(num + undefined) );
+
+// console.log( 1 == true );
 
 // var num = 10;
 // var num1 = 20;
@@ -165,10 +215,11 @@
 // console.log( Number( numStr )  );
 // console.log( Boolean( numStr ) );
 
-// let newNum = 101;
+let newNum = 101, newId = 1, str="hii", newObj = {}
 
-// console.log( Boolean(Infinity) );
+// console.log( Boolean(-Infinity) );
 // console.log( Boolean( newNum ) );
+// console.log( Boolean( undefined ) );
 // console.log( String( newNum ) );
 // console.log( newNum + String( newNum ) );
 // console.log( num1 + Number( numStr ) );
@@ -263,7 +314,7 @@
 
 //=====Assingment Operator
 
-var a = 10;
+// var a = 10;
 
 // a += 50 // a = a+50
 // console.log ( a );
@@ -285,16 +336,37 @@ var a = 10;
 
 //--- Logical AND (&&)
 
-var num = 17;
-var num1 = 25
+// var num = 17;
+// var num1 = 25
 
 // console.log( num>=18 && num<=30  );
 // console.log( num>=18 && num1<=30  );
-
 //-- Logical OR ( || )
-console.log( num>=18 || num1<=30  );
+// console.log( num>=18 || num1<=30  );
 
 //----Logical NOT ( ! )
-console.log( !(num>=18 || num1<=30)  ); 
+// console.log( !(num>=18 || num1<=30)  ); 
 
-console.log( !(num<20) );
+// console.log( !(num<20) );
+
+// let arr = [ 1,2,3,4,5,6 ]
+// let revarr = []
+
+// for (let index = arr.length-1; index > 0; index--) {
+//     revarr.push(arr[index])
+// }
+
+// console.log( revarr );
+
+
+// if (true) {
+//     console.log( "Somthing is greter" );
+// }
+
+// if (false) {
+//     console.log( "Other If is executd" );
+// } 
+// else {
+//     console.log( "Else is executed" );
+// }
+
