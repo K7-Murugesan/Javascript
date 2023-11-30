@@ -21,14 +21,14 @@
 
 // console.log( str );
 // console.log( typeof str );
- 
+
 // var myNewEmployeeId = 1; // camelCase
 // var MyNewEmployeeId = 2; //PascalCase
 // var my_new_employee_id = 3 ; //under_case (or) snake_case
 
 
- // - single line comment
- /* Multi line comment  */  
+// - single line comment
+/* Multi line comment  */
 
 
 // var a = 10
@@ -104,12 +104,12 @@
 // let a = 10; 
 // a = 20;
 
-let a; // Declaration
-a=10; // Initialization
-a="ECMA" // Re-initialization
-// let a = 30; //Redeclare is not possible
+// let a; // Declaration
+// a=10; // Initialization
+// a="ECMA" // Re-initialization
+// // let a = 30; //Redeclare is not possible
 
-const b = 10;
+// const b = 10;
 
 
 
@@ -141,7 +141,7 @@ const b = 10;
 // {
 //     const fname = "Brendan Eich"
 //     {
-       
+
 //         console.log( fname );
 //     }
 //     console.log( fname );
@@ -215,7 +215,48 @@ const b = 10;
 // console.log( Number( numStr )  );
 // console.log( Boolean( numStr ) );
 
-let newNum = 101, newId = 1, str="hii", newObj = {}
+// let newNum = 101, newId = 1, str="hii", newObj = {}
+
+// var normalStr = "Lets break down"+' '+
+// newNum+
+// str;
+// // console.log( normalStr );
+
+// var tempStr = `Lets break 
+// down ${newNum} ${str}`
+
+// console.log( tempStr );
+
+//Strict Equal or Identical equal ( === )
+// Strict Not equal or Identical not equal ( !== )
+
+// console.log( 10 == '10' );
+// console.log( 10 === '10' );
+// console.log( 10 != '10' );
+// console.log( 10 !== '10' );
+// console.log( 1 !== true );
+
+// var a1 = 1 // 2 7 8 
+// var b1 = 2; //3 4
+// var c1 = 3; //4 5 15
+
+// a1 = a1++ + ++b1 + c1++; // a1 = 1 + 3 + 3 = 7
+// c1 = a1++ + ++c1 + b1++; // c1 = 7 + 5 + 3 = 15
+
+// console.log( a1, b1, c1 );
+
+// var age = 18;
+
+// if(17>=18){
+//     console.log( "Eligible" );
+// }
+// if(age>=18){
+//     console.log( "Duplicate" );
+// }
+// else{
+//     console.log( "Not eligible" );
+// }
+
 
 // console.log( Boolean(-Infinity) );
 // console.log( Boolean( newNum ) );
@@ -370,3 +411,58 @@ let newNum = 101, newId = 1, str="hii", newObj = {}
 //     console.log( "Else is executed" );
 // }
 
+
+//====for of & for in loop
+
+// for of - only for array
+// let newArr = [
+//     {id:1, fName:"xyz"},
+//     {id:2, fName:"abc"},
+//     {id:3, fName:"pqr"},
+//     {id:4, fName:"lmn"}
+// ]
+
+// for(i=0; i<newArr.length; i++ )
+// {
+//     console.log( newArr[i] );
+// }
+// for(let val of newArr){
+//     console.log( val.id, val.fName );
+// }
+
+//for in - both array and object
+
+// let newObj = {
+//     id:1,
+//     fname: 'type coercion',
+//     lname: 'Implicit Conversion'
+// }
+// for(let i in newObj){
+//     console.log( newObj[i] );
+// }
+
+// let arr = [
+//     {newId:1},
+//     {newId:2},
+//     {newId:3},
+//     {newId:4}
+// ]
+
+// for(let key in arr){
+//     console.log( key, arr[key].newId );
+// }
+
+
+//function declaration
+function function_name(a, b) {
+    let val = 2030
+    console.log("non-return type " + (a + b ) + val);
+    // return "Im a return type"
+}
+//function call / invoke
+function_name(10, 20)
+function_name(1, 2)
+function_name(100, 200)
+function_name(5, 10)
+function_name(-10, 20)
+// console.log( val );
