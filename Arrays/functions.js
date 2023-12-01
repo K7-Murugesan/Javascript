@@ -9,9 +9,48 @@
 
 // let a=10;
 
+// let newstr;
+
+// console.log( newstr );
+// console.log( str );
+
+////////////////////////====================================================================
+
+// function add(a=3,b){
+//     console.log( "named function "+(a+b) );  
+    //output --- named function + (1 + undefined )
+    // console.log( "named function" );
+    // console.log( "named function" );
+    // console.log( "named function" );
+    // return "return type function","duplicate value"  
+// }
+// add(undefined,10)
+// add(undefined,20)
+// add(undefined,30)
+// add(undefined,40)
+
+//=====Closure & scope Chain
+
+// let a = 10;
+// {
+//     var b = 20;
+// }
+// console.log( b );
+// function outerFunction(){
+     
+//     function innerFunction() { 
+//         if (true) {
+//             var a = 20
+//             console.log( a );
+//         }
+//         console.log( a );
+//     } 
+//     innerFunction()
+//     // console.log( a ); 
+// }
+// outerFunction()
+
 //Normal or named function
-
-
 // function functionName(){
 //        console.log( "1234" ); 
 
@@ -20,22 +59,56 @@
 
 //Anonymous function (or) function expression
 
+// let name = function (a,b) {
+//     console.log( a+b );
+// }
+// name(20,30)
+
+//Arrow Function
+// let name1 = () =>{
+//     // console.log( a+b );
+//     console.log( a+b );
+// }
+// name1() 
+// let name1 = (a,b) => console.log(a+b);
+// let name1 = (a,b) => a+b;
+let name2 = a => a ;
+console.log( name2( 40 ) );
+
+// Self Invoked Function
+//IIFE - Immediately Invoked Function Expression --Pattern
+
+((str,str1)=> {
+    console.log( "IIFE "+str+str1 );
+})("hi ", "hello")
+
+//====Currying
+function curryFunction(a) {
+    return function (b) {
+        console.log( a+b );
+    }
+}
+curryFunction(10)(30)
+
+
 // let newFun1 = function(a){
 //     return a
 // }
 // console.log( newFun1(3) );
 
+//Arrow function 
+// let x = (b,c) =>
+// {
+//     console.log(b-c);
+// }
+// x(10,6);
 
 // let newFun = (a,b)=>a+b
 
 // console.log( newFun(4,10) );
 // //Arrow Functions
 
-// let x = (b,c) =>
-// {
-//     console.log(b-c);
-// }
-// x(10,6);
+
 
 // let abc = (a, b) => console.log(a + b);
 
@@ -153,7 +226,7 @@ a single function. Here's an example:  */
 //     } else if (arguments.length == 0) {
 //         console.log("Hello");
 //     }
-// }
+//  }
 // function add(a, b,c=1) {
 //     if (arguments.length == 3) {
 //         console.log(a + b+c);
@@ -728,14 +801,14 @@ Looping Statement-- Used to print a statement for multiple times */
         }
 */
 
-var age = 17;
+// var age = 17;
 
-if (age>=18 && age<=30) {
-    console.log( "Eligible" );
-}
-else{
-    console.log( "Not eligible" );
-}
+// if (age>=18 && age<=30) {
+//     console.log( "Eligible" );
+// }
+// else{
+//     console.log( "Not eligible" );
+// }
 
 //======= If else-if else statement
 /*Syntax
@@ -749,17 +822,17 @@ else{
             statement
         }
 */
-var input1 = 10;
-var input2 = 15;
+// var input1 = 10;
+// var input2 = 15;
 
-if(input1>input2){
-    console.log( `${input1} is greater than ${input2}` );
-}
-else if(input2>input1){
-    console.log( `${input2} is greater than ${input1}` );
-}
-else{
-    console.log( `Both are equal` );
-}
+// if(input1>input2){
+//     console.log( `${input1} is greater than ${input2}` );
+// }
+// else if(input2>input1){
+//     console.log( `${input2} is greater than ${input1}` );
+// }
+// else{
+//     console.log( `Both are equal` );
+// }
 
 
