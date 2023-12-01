@@ -90,6 +90,7 @@ function curryFunction(a) {
 }
 curryFunction(10)(30)
 
+//=======================================================================
 
 // let newFun1 = function(a){
 //     return a
