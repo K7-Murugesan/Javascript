@@ -55,7 +55,10 @@ console.log( e );
 // console.log( a , b );
 
 //===call by refernce
+
 // let arr  = [1,2,3,4]
+
+//Spread Operator using array
 // let arr1 = [...arr]
 
 // arr.push(5,6)
@@ -63,14 +66,15 @@ console.log( e );
 // console.log( arr );
 // console.log( arr1 );
 
+//Spread Operator using object
 let obj = {
     course: 'Java full stack',
     duration: '6 months',
     techInclues: ["html","css","js"]
 }
 
-let obj2 = {...obj};
-obj2.techInclues = [...obj.techInclues]
+let obj2 = {...obj}; 
+obj2.techInclues = [...obj.techInclues] //Spread operator for nested referernce type
 
 obj.duration = "4 months"
 obj.techInclues[0] = "xml"
