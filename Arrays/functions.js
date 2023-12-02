@@ -36,8 +36,8 @@
 //     var b = 20;
 // }
 // console.log( b );
+
 // function outerFunction(){
-     
 //     function innerFunction() { 
 //         if (true) {
 //             var a = 20
@@ -72,23 +72,56 @@
 // name1() 
 // let name1 = (a,b) => console.log(a+b);
 // let name1 = (a,b) => a+b;
-let name2 = a => a ;
-console.log( name2( 40 ) );
+// let name2 = a => a ;
+// console.log( name2( 40 ) );
 
 // Self Invoked Function
 //IIFE - Immediately Invoked Function Expression --Pattern
 
-((str,str1)=> {
-    console.log( "IIFE "+str+str1 );
-})("hi ", "hello")
+// ((str,str1)=> {
+//     console.log( "IIFE "+str+str1 );
+// })("hi ", "hello")
 
 //====Currying
-function curryFunction(a) {
-    return function (b) {
-        console.log( a+b );
-    }
+// function curryFunction(a) {
+//     return function (b) {
+//         console.log( a+b );
+//     }
+// }
+// curryFunction(10)(30)
+
+//Rest Parameter
+function name(a,...b) {
+    console.log( a,b );
 }
-curryFunction(10)(30)
+name( 1,2,3,4,5 )
+
+
+//Higher Order function & Call back function
+
+//call back - function sent as an argument to another function
+// HOF - function which accepts another function as a argument
+
+
+// let acceptCallBack = callBack
+// console.log( acceptCallBack(100,200); );
+
+function HOF(str,num, str1) {
+    console.log( "Im HOF "+( str+num ) );
+     str1(100,200)
+}
+function callBack(a,b) {
+    console.log( "Im call Back "+( a+b ) );
+}
+HOF( "10",20,callBack  )
+
+// Hoisting 
+
+
+console.log( a );
+
+var a;
+
 
 //=======================================================================
 

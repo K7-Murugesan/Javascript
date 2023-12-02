@@ -1,6 +1,26 @@
+
+// for (let index = 0; index < 10; index++) {
+//     console.log( index );
+// }
+// for (index = 15; index < 20; index++) {
+// }
+// console.log( index ); 
+// for (const index = 0; index < 10; index++) {
+//     console.log( index ); 
+// }
+
+
+// let arr = [ 1,2,3,4 ]
+
+// for (let index = 0; index < arr.length; index++) {
+//     console.log( arr[index] );
+    
+// }
+
 // //pop method
 // let a=[1,[2,4,5,6,7,8],3,4,5];
-
+// console.log( a.pop() );
+// console.log( a );
 // console.log( a.pop() );
 // console.log(a);
 
@@ -15,25 +35,37 @@
 
 //push method
 // var b=[1,2,3,4,5];
-// b.push(6,7,'eight',[9,10,11]);
+// b.push(6,7,8,"one",{id:1}, [10,20,20]);
 // console.log(b);
 
 //shift method
 // var c=[1,2,3,4,5]
+// c.shift()
 // console.log(c.shift());
 // console.log(c);
 
 //unshift method
 // var d =[ 1,2,3,4,5];
-//   d.unshift(12,"12",3,-1,-10)  ;  
+//   d.unshift(12,"12",3,-1,-10) 
 //   d.push(6,7,8);
 //   console.log( d );
-
 // console.log(d);
 
 //includes method
 //  var a1 =[1,2,3,4,5];
-//  console.log(a1.includes(3));  
+
+//  console.log( a1.includes( 6 ) );
+//  console.log(a1.includes(3)); 
+
+//indexOf
+
+// var a = [10,30,20,30,40,30,50]
+
+// console.log( a.indexOf(30)  );
+// console.log( a.indexOf(30,4)  );
+
+// console.log( a.lastIndexOf( 30)  );
+// console.log( a.lastIndexOf( 30,4 )  );
 
 //indexOf method - is used to get the index value is present or not  and it occurs first repeated value.
 // var a =[1,2,3,2,8,[4,8,[5,3,8, [1,2,3,4, [ 4,5,6,7,8 ]]]]];
@@ -51,6 +83,12 @@
 /////      ( element,index starts search from right to left )
 
 //flat method
+
+    // let arr = [1,2,[3,4,5],6,7,[1,[2,[3],4],5] ]
+    // let flattedArray = arr.flat(Infinity)
+    // console.log( arr  );
+    // console.log( flattedArray );
+
 // var a =[1,2,3,2,8,[4,[2,3],[ 3,4,5,6,[7,8,10,[123,12,1213]] ]]];
 
 // let arr = [1,2,[3,[4,1,[2,3,4,55],6],7,8, [1,23,4,5,6]]]
@@ -63,12 +101,29 @@
 // //  var b = a.flat( Infinity );
 // console.log( a.flat(Infinity) );
 
-//reverse method
-// var b1=[1,2,3,4,5]
+
+// var newArr = []
+
+// for (let index = b1.length-1; index >= 0 ; index--) {
+    
+    //     newArr.push( b1[index] )
+    // }
+    // console.log( newArr );
+    
+//reverse method    
+//     var b1=[1,2,3,4,5]
 // b1.reverse();
 // console.log(b1);
 
+
 // // sort method
+
+// let arr = ["."," ",10,2,5,20,3,1,115,11,55,6,4]
+// arr.sort();
+// console.log( arr );
+
+// console.log( "apple">1 );
+// console.log( 1 > "a" );
 
 // var a2 = [1,3,5,2,4,6,9,";",0,11,21,13,25,235, 236,85,87,8,95,91," ", "!", "|"]
 
@@ -95,6 +150,8 @@
 
 
 ///SLICE METHOD
+
+
 //        [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]
 // let arr = [10,20,30,40,50,60,70,80,90,10]
 
@@ -277,8 +334,8 @@
 //  var c1 = [ "apple","banana",'Orange',"Strawberry","Aeroplane"  ]
 //  console.log( c1.sort() ); // Element sorted in ASCII order
 
-var c1= [5,2,4,3,1,6,10,12,34] ;
-console.log(  c1.sort((a, b) => a - b) ); //ascending
+// var c1= [5,2,4,3,1,6,10,12,34] ;
+// console.log(  c1.sort((a, b) => a - b) ); //ascending
 // console.log(  c1.sort((a, b) => b - a) ); //descending
 
 
@@ -896,9 +953,9 @@ console.log(  c1.sort((a, b) => a - b) ); //ascending
 
 // console.log( boo,boo1 );
 
-function abc(a,b) {
-    console.log( "Hii" );
-    return(a+b);
-}
-//  abc(4,5);
- console.log( abc(4,5) );
+// function abc(a,b) {
+//     console.log( "Hii" );
+//     return(a+b);
+// }
+// //  abc(4,5);
+//  console.log( abc(4,5) );
