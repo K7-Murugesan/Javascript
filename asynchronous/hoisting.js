@@ -6,20 +6,20 @@
  the variable to the top of the scope */
 //  a = 10;
 
-let functionExpressionHoist = function () {
-  console.log( "Hi im in" );
-}
-functionExpressionHoist();
-
-let a;
-console.log( a );
+// let functionExpressionHoist = function () {
+//   console.log( "Hi im in" );
+// }
+// functionExpressionHoist();
+// let a;
+// a=10;
+// console.log( a );
 //  a = 5;
-functionDecHoist();
+// functionDecHoist();
 
-function functionDecHoist(){
-    console.log( "Function is hoisted" );
-
-}
+// function functionDecHoist(){
+//   console.log( "Function is hoisted" );
+  
+// }
 
 /*For let and const - first you should declare  
     otherwise it will throw reference error...

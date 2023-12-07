@@ -10,7 +10,7 @@
 // }
 
 
-// let arr = [ 1,2,3,4 ]
+// let arr = [ 1,2,3,4,2 ]
 
 // for (let index = 0; index < arr.length; index++) {
 //     console.log( arr[index] );
@@ -86,7 +86,7 @@
 
     // let arr = [1,2,[3,4,5],6,7,[1,[2,[3],4],5] ]
     // let flattedArray = arr.flat(Infinity)
-    // console.log( arr  );
+    // // console.log( arr  );
     // console.log( flattedArray );
 
 // var a =[1,2,3,2,8,[4,[2,3],[ 3,4,5,6,[7,8,10,[123,12,1213]] ]]];
@@ -151,6 +151,15 @@
 
 ///SLICE METHOD
 
+// var sliceArr = [11,10,23,22,35,33,45,44];
+// var newArr = sliceArr.slice()
+// var newArr = sliceArr.slice(3)
+// var newArr1 = sliceArr.slice(3,6)
+// //                     slice(start,end-1)
+// //                     slice( 3, 6-1 )
+// console.log( newArr );
+// console.log( newArr1 );
+
 
 //        [-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]
 // let arr = [10,20,30,40,50,60,70,80,90,10]
@@ -165,7 +174,15 @@
 
 //========Splice Method-add,delete,replace
 
-// let arr = [1,2,3,4,5,6,7,8,9,10]
+// let arr = [11,21,31,41,51,61,71,81,91,101]
+
+//splice(start,count) 
+// //splice(start,count,replacing elements)
+// let newArr = arr.splice(-3,1,30);
+// let newArr = arr.splice(6,0,(10,20,30),(121,134,123));
+
+// console.log( arr );
+// console.log( newArr );
 
 // arr.splice(5,0,(11,12,13,22,23),101,102)
 
@@ -188,10 +205,21 @@
 // console.log(  arr);
 
 
+
 ///========Fill method
+
+//index-[-10,-9,-8,-7,-6,-5,-4,-3,-2,-1]
 // let arr = [1,2,3,4,5,6,11,8,9,10]
-//fill(values)
+
+// arr.fill(21, -3,-1  )
 //fill(value,start,end-1)
+//      (21, -3,(-1-1))
+//      (21, -3,-2)
+
+// console.log( arr );
+
+
+// console.log( arr );
 
 // arr.fill(21,3,7);
 // console.log( arr );
@@ -200,13 +228,88 @@
 
 // console.log(  arr );
 
+//====================================================
+
 //=====Concat method
-// let arr = [1,2,3,4,5,6,11,8,9,10]
 
-// let arr1 = arr;
-// let arr1 = arr.concat(12,13,23,45,67,89);
+// let ConArr = [1,2,3,4,5,6,11,8,9,10]
+// let concat2 = [{person:2}]
+// // let arr1 = ConArr;
+// var arr1 = ConArr.concat()
+// var arr1 = [].concat( ConArr )
 
+// ConArr.push([33,44,55])
+// // let arr1 = arr.concat(12,13,23,45,67,89);
+// console.log( ConArr );
 // console.log( arr1 );
+
+//=====forEach method
+
+// let arrOfObj = [ 
+//     {id:1, employeeName: 'Shailesh' },
+//     {id:2, employeeName: 'Anil' },
+//     {id:3, employeeName: 'Mukesh' },
+//     {id:4, employeeName: 'Chandru' }
+//  ]
+//  let newVariable = arrOfObj.forEach( function(val){
+//      console.log( val.id>1   );
+//  } )   
+
+//===Map method
+
+// let arrOfObj = [ 
+//     {id:1, employeeName: 'Shailesh' },
+//     {id:2, employeeName: 'Anil' },
+//     {id:3, employeeName: 'Mukesh' },
+//     {id:4, employeeName: 'Chandru' }
+//  ]
+
+// let newArr = arrOfObj.map( (val,i,arr) => {
+//     console.log( val ); //It will print a value same like forEach, for, forOf, forIn
+//     return val //  returns a value and pushed to new array
+// } )
+// let newArr = arrOfObj.map( (val,i,arr) => i )
+
+// console.log( newArr );
+ 
+//=======================================================
+
+//filter method
+
+// let arrOfObj = [ 
+//     {id:1, employeeName: 'Shailesh' },
+//     {id:2, employeeName: 'Anil' },
+//     {id:3, employeeName: 'Mukesh' },
+//     {id:4, employeeName: 'Chandru' }
+//  ]
+
+// let filteredArr = arrOfObj.filter( (val,index,arr)=>{
+//     console.log( val );
+//     return val.id>1
+// } )
+// let filteredArr = arrOfObj.filter( (val,i,arr)=> val.id )
+// console.log( filteredArr );
+// console.log( arrOfObj );
+
+
+//====Find method
+
+// let arrOfObj = [ 
+//     {id:1, employeeName: 'Shailesh' },
+//     {id:2, employeeName: 'Anil' },
+//     {id:3, employeeName: 'Mukesh' }, 
+//     {id:4, employeeName: 'Chandru' },
+//     {id:5, employeeName: 'Kesavan' },
+// ]
+// // let findSingleVal = arrOfObj.find( (val,i,arr)=> val.id>1 )
+// let findSingleVal = arrOfObj.find( (val,i,arr)=> {
+//     console.log( val );
+//     return val.id>3
+// })
+// console.log( findSingleVal );
+
+
+//==========================================================================
 
 // let arr2 = [10,20,3,56,67]
 
@@ -959,3 +1062,12 @@
 // }
 // //  abc(4,5);
 //  console.log( abc(4,5) );
+
+let arr = [1,2,3,4,5]
+for (const key in arr) {
+    console.log( arr[key] );
+}
+
+for (const iterator of arr) {
+    console.log( iterator );
+}
