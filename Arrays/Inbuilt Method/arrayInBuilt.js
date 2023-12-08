@@ -311,7 +311,49 @@
 
 //==========================================================================
 
+//====Reduce Method
+// let sum = 0; 
+// for (let i = 1; i <= 10; i++) {
+//    sum +=i 
+// }
+ 
+// let proArr = [1,2,3,4]
+// let product = 1;
+// for (let i = 0; i<proArr.length; i++) {
+//    product *=proArr[i] 
+// }
+// console.log( sum );
+// console.log( product );
+
+// let arr = [10,20,30,40]
+
+// let newVal = arr.reduce((prev,current)=>{
+//     return prev*current ; 
+// },1)
+
+// console.log( newVal );
+
+// Some method & Every method
+
+let arr = [10,20,30,40]
+
+let someArr = arr.some((val,ind,arr)=>{
+    return val>30
+})
+let everyArr = arr.every((val,ind,arr)=>{
+    return val>5
+})
+
+console.log( someArr , everyArr);
+
+
+/////////////////XXXXXXXXXXXXXXXXXXXXXX//////////////////////////
+
+
 // let arr2 = [10,20,3,56,67]
+
+// let keysInArr = arr2.keys();
+
 
 // let arr3 = arr.concat(arr2)
 // console.log( arr3 );
@@ -1063,11 +1105,11 @@
 // //  abc(4,5);
 //  console.log( abc(4,5) );
 
-let arr = [1,2,3,4,5]
-for (const key in arr) {
-    console.log( arr[key] );
-}
+// let arr = [1,2,3,4,5]
+// for (const key in arr) {
+//     console.log( arr[key] );
+// }
 
-for (const iterator of arr) {
-    console.log( iterator );
-}
+// for (const iterator of arr) {
+//     console.log( iterator );
+// }
