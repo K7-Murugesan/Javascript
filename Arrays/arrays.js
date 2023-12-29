@@ -481,4 +481,3 @@ console.log( `My name is ${myName} im from ${place}  `  ); // Template Literal -
 
 // var a =10
 // var a=20
-

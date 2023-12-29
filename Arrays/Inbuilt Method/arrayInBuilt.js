@@ -257,17 +257,21 @@
 
 //===Map method
 
-// let arrOfObj = [ 
-//     {id:1, employeeName: 'Shailesh' },
-//     {id:2, employeeName: 'Anil' },
-//     {id:3, employeeName: 'Mukesh' },
-//     {id:4, employeeName: 'Chandru' }
-//  ]
+let arrOfObj = [ 
+    {id:1, employeeName: 'Shailesh' },
+    {id:2, employeeName: 'Anil' },
+    {id:3, employeeName: 'Mukesh' },
+    {id:4, employeeName: 'Chandru' }
+ ]
 
-// let newArr = arrOfObj.map( (val,i,arr) => {
-//     console.log( val ); //It will print a value same like forEach, for, forOf, forIn
-//     return val //  returns a value and pushed to new array
-// } )
+arrOfObj.forEach( function(val,i,arr){
+
+} )
+
+let newArr = arrOfObj.map( (val,i,arr) => {
+    console.log( val ); //It will print a value same like forEach, for, forOf, forIn
+    return val //  returns a value and pushed to new array
+} )
 // let newArr = arrOfObj.map( (val,i,arr) => i )
 
 // console.log( newArr );
@@ -335,16 +339,29 @@
 
 // Some method & Every method
 
-let arr = [10,20,30,40]
+// let arr = [10,20,30,40]
 
-let someArr = arr.some((val,ind,arr)=>{
-    return val>30
-})
-let everyArr = arr.every((val,ind,arr)=>{
-    return val>5
-})
+// let someArr = arr.some((val,ind,arr)=>{
+//     return val>30
+// })
+// let everyArr = arr.every((val,ind,arr)=>{
+//     return val>5
+// })
 
-console.log( someArr , everyArr);
+// console.log( someArr , everyArr);
+
+
+//==Sort method
+
+let a = [2,1,33,11,22,4,3,44]
+
+a.sort((a,b)=> a-b ) // asscending 
+console.log( a );
+
+a.sort((a,b)=> b-a ) // descending 
+console.log( a );
+
+
 
 
 /////////////////XXXXXXXXXXXXXXXXXXXXXX//////////////////////////

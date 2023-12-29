@@ -37,15 +37,12 @@ let array=["ram","sam","vasanth","ranjith"]
 //  console.log(number)
 //  console.log(person)
 
-
+// var a = 1;
 let arr = [1,2,3,4,5,6,7,8]  // ...array_name
 
-let [a,b,c,d,...e] = arr
+let [a,b,c,d,f,g,h,k] = arr
 
-console.log( a,b,c,d );
-console.log( e );
-
-
+console.log( a );
 
 //==call by value
 // let a =10;
