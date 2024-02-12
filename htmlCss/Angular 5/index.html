@@ -1,47 +1,38 @@
-<!-- Tag --------- A keyword enclosed within angle bracket -->
-
-<!-- Single Tag & Double tag -->
-
-<!-- Single tag -  <br> , <hr>  -->
-<!-- Double tag -  <html> </html>, <head> </head>, <body> </body>  -->
-
-
-<!-- <!DOCTYPE html> It will point current version -->
-<!-- <html lang="en"> Root Element -->
-
-<!-- <head> Invisible part -->
-    <!-- <title>ANGULAR 5</title> -->
-    <!-- <meta charset="UTF-8"> Data about data -->
-    <!-- <meta name="author" content="Kesavan">
-    <meta name="description" content="Introduction of Front End development"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <style>
-    </style>
-    <script>
-
-    </script>
-</head>
-
-<body>
-   
-</body>
-
-</html> -->
-
-
-<!--  My name is kesavan   -->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio sint facilis error consequuntur voluptate deserunt. Vitae, voluptatem iusto? Quis praesentium, earum sit, animi perferendis obcaecati expedita reiciendis adipisci quam eveniet officia aspernatur accusamus dolore alias vitae magnam deserunt porro fuga explicabo aut aliquid qui, quia eos. Modi rem quas sit!
-        </p>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Javascript </h1>
+    <h2>CSS</h2>
+    <h2>HTMl</h2>
+
+    <div id="app">  </div>
+    <!-- <script src="index.js">  
+         
+    </script>
+    <script>
+        let app = document.getElementById("app")
+
+        let header = document.createElement("h1")
+
+        header.innerHTML = "Comparing to react code"
+
+        app.append( header );
+
+    </script> -->
+
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/jsx" >
+        let app = document.getElementById("app")
+        ReactDOM.render( <h1> Hi this is react </h1>, app  )
+    </script>
+</body>
 </html>

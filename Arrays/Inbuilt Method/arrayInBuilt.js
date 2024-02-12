@@ -1130,3 +1130,146 @@ console.log( a );
 // for (const iterator of arr) {
 //     console.log( iterator );
 // }
+let str = '';
+
+// console.log( Number(str) );
+
+// console.log( 1 > Number("true") )
+
+// console.log( 1 == '1'  );
+
+// let a = 10;   
+
+// let b = a;
+
+// a = 20;
+
+// console.log( a , b );
+
+// let arr = [1,2,3,"!"]
+// let arr2 = [].concat( arr )
+
+// arr.push(5)
+
+// console.log( arr, arr2 );
+
+//===========================================
+
+//1st task
+
+let arr = [ [1,2,3],[4,5],[6,7], [8,9]  ]
+
+// output = [ 1,2,3,4,5,6,7,8,8 ]
+
+
+//2nd task 
+
+let b = [ 1,2,3,1,2,5,6,2,7,8 ]
+
+// output = {
+//     '1': 2,
+//     '2': 3,
+//     '3': 1
+// }
+
+let c = 'new';
+
+// output = 'wen'
+
+let obj = {id:1};
+
+// obj['id'] = 1;
+
+console.log( obj.name );
+
+let alpha1 = 'abcdefghijklmnopqrstuvwxyz'
+
+let alpha2 = alpha1.toUpperCase()
+
+let alpha = alpha1+alpha2
+
+console.log( alpha );
+
+let chars = 3
+
+//output ACi
+let fL6 = [6,2,3,4]
+
+    if (fL6[0]===6 || fL6[fL6.length-1]===6) {
+        console.log( true );
+    } else {
+        console.log( false );
+    }    
+
+
+let str1 = 'qwedqeqe'+ 
+chars + ' '
+alpha
+
+let str2 = `df s
+df
+s d
+f d
+f 
+${chars} // string interpolation --- variable embedded in template string
+${alpha}`
+
+console.log( str1 );
+console.log( str2 );
+
+let newobj = { fName:"abc", employId:"abd123" }
+
+for( let key in newobj ){
+    console.log( newobj[key] );
+}
+for( let key in b ){
+    console.log( b[key] );
+}
+
+for(let val of arr){
+    console.log( val );
+}
+
+
+// let b1 = prompt("Enter as number");
+
+
+function name(a,b,...c) {
+    console.log( a,b,c );
+}
+name(1,2,3,4)
+
+let abc = function(a,b){ // function expression
+    console.log(a+b); 
+    return a  
+}
+
+let abc1 = abc(10,20);
+
+console.log( abc1 );
+
+// let abc1 = (a, b)=> a+b
+
+// console.log( abc1(100,45) );
+
+
+(
+    function(a,b){
+        console.log(a+b);
+    }
+)(10,20)
+
+
+
+function functionName(a){
+    function name(b) {
+        console.log( a + b );
+    }
+    name(3)
+}
+functionName(1)
+
+
+console.log( a );
+
+var a = 10;

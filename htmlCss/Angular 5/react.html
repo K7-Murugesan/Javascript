@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> hiiiii </h1>
+    <div id="root">  </div>
+    <script>
+       let heading =  document.createElement("h1")
+
+        heading.innerHTML = "Using Javascript";
+
+        let body = document.querySelector("body")
+
+        body.append( heading )
+
+    </script>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel"> 
+        let root = document.querySelector("#root")
+        
+        ReactDOM.render( <h1>Using React</h1> , root )
+    </script>
+
+</body>
+</html>

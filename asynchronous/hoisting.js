@@ -126,3 +126,90 @@ This order of searching is known as the scope chain. */
 // }
 
 // outerFunction();
+
+
+// console.log( "1" );
+// setTimeout( ()=>{
+//     console.log( "2" );
+// })
+// console.log( "3" );
+
+
+//Currying
+
+// function functionName(){
+//     console.log( "Normal Function" );
+// }
+// functionName();
+
+// ( function(a){
+//     console.log( "IIFE"+a );
+// } )(3)
+
+// function fnName(a,b,c,d,e){
+//     return function(b){
+//             console.log( a+b );
+//     }
+// }
+// fnName(10)(20)
+
+// function name(a) {
+//     console.log( a+(Math.random()) );
+// }
+// name(1)
+
+// let a = 20;
+// function abc(){
+//     if(true){
+//         if(true){
+//             var b = 10
+//             if(true)
+//             {
+//                 var c =30;
+//                 console.log( a+b+c );
+//                 console.log( b );
+//             }
+//         }
+//         console.log(c);
+//     }
+//     console.log( a+b+c );
+// }
+// abc();
+
+
+let obj = [
+    {state:'tn', city:'chennai'},
+    {state:'tn', city:'trichy'},
+    {state:'ka', city:'bangalore'},
+    {state:'kl', city:'cochin'},
+]
+
+//output = {
+//     'tn': ['chennai','trichy'],
+//     'ka': ['bangalore'],
+//     'kl': ['cochin'],
+// }
+
+let arr = [ [1,2,3], [4,5],[6],[7,8] ]
+
+//output = [1,2,3,4,5,6,7,8]
+
+
+
+
+
+
+
+// a function which returns an anonomous function 
+// - normally argument is passed while invoking a function. 
+// so for the returned function i've to pass the argument after normal invoking 
+// i've to open another parenthesis to call the returned function
+
+
+
+
+for (var i = 0; i < 5; i++) {
+    console.log(i)
+}
+setTimeout( ()=>console.log( i ),1000 )
+// console.log( i );
