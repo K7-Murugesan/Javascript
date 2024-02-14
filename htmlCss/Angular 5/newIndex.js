@@ -111,16 +111,94 @@
 
 //for-in loop
 
-let obj = { id:1, name: "abc" }
-let arr = [10,20,30];
-let str = 'abcde'
+// let obj = { id:1, name: "abc" }
+// let arr = [10,20,30];
+// let str = 'abcde'
 
-for(let key in obj ){
-    console.log( obj[key] );
+// for(let key in obj ){
+//     console.log( obj[key] );
+// }
+// for(let key in arr ){
+//     console.log( arr[key] );
+// }
+// for(let key in str ){
+//     console.log( key );
+// }
+
+// let str;
+// console.log( str );
+
+// function sum(a=123,b=456){
+//     console.log( a+b );
+// }
+// sum(undefined,10);
+
+
+//========== let vs var vs const
+
+
+// var str; // declaration
+// str = "js"; //initialization;
+// var obj = {id:1} ; 
+// var obj = 10; // Re-declare
+// obj = {name:"sujith"}; // Re-assign or re-initialize
+
+// console.log( obj );
+
+// let str= 'CS'; //Declare and initialize
+// str = 'AI' //Re-assign  and redclare is not possible
+// str = 'ML';
+
+// console.log( str );
+
+// const arr = [1,2,3,4]; //Only declare and initialize
+
+// console.log( arr );
+
+// let num = 456;
+// const newVal = "xyz"
+
+// function name1() {
+
+//     let num = 123; //block scope
+//     const newVal = "abc"; //block scope
+//     if(true){
+//         // var num = 123; //function scope
+
+//         if (true) {
+//             console.log( num );
+//             console.log( newVal );
+//         }
+//     }
+//     console.log(newVal,num);
+    
+// }
+// name1()
+// console.log( num, newVal );
+
+//Function types 
+
+//Normal function
+
+//Ananomous function
+let ananomFun = function(a,b){
+    return "Im an ananomous "+(a+b) ;
 }
-for(let key in arr ){
-    console.log( arr[key] );
-}
-for(let key in str ){
-    console.log( key );
-}
+let newVal = ananomFun(10,20)
+
+console.log( newVal );
+
+//Arrow function or fat Arrow
+let arrowFun = (a,b) => (  "Im an arrow "+(a+b) );
+
+
+console.log( arrowFun(10,20));
+
+//Self invoked function
+
+//IIFE - Immediately Invoked Function Expression
+
+(function (a,b){
+    console.log( "im iife "+(a+b) );
+})(100,50);
+
