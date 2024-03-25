@@ -73,7 +73,7 @@ let obj = {
 
 let obj2 = {...obj}; 
 obj2.techInclues = [...obj.techInclues] //Spread operator for nested referernce type
-
+0
 obj.duration = "4 months"
 obj.techInclues[0] = "xml"
 
