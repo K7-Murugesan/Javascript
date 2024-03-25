@@ -16,7 +16,7 @@ let array=["ram","sam","vasanth","ranjith"]
 
 
 
-//object desturing
+//object destructuring
 
 
 // let person={
